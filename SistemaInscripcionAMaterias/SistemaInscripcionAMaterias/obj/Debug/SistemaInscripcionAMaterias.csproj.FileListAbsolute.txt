@@ -1,0 +1,7 @@
+C:\Users\ASUS\Desktop\sistemas de infor\cai 2\Github\GrupoKInscripcion\SistemaInscripcionAMaterias\SistemaInscripcionAMaterias\obj\Debug\SistemaInscripcionAMaterias.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\sistemas de infor\cai 2\Github\GrupoKInscripcion\SistemaInscripcionAMaterias\SistemaInscripcionAMaterias\obj\Debug\SistemaInscripcionAMaterias.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\sistemas de infor\cai 2\Github\GrupoKInscripcion\SistemaInscripcionAMaterias\SistemaInscripcionAMaterias\bin\Debug\SistemaInscripcionAMaterias.exe.config
+C:\Users\ASUS\Desktop\sistemas de infor\cai 2\Github\GrupoKInscripcion\SistemaInscripcionAMaterias\SistemaInscripcionAMaterias\bin\Debug\SistemaInscripcionAMaterias.exe
+C:\Users\ASUS\Desktop\sistemas de infor\cai 2\Github\GrupoKInscripcion\SistemaInscripcionAMaterias\SistemaInscripcionAMaterias\bin\Debug\SistemaInscripcionAMaterias.pdb
+C:\Users\ASUS\Desktop\sistemas de infor\cai 2\Github\GrupoKInscripcion\SistemaInscripcionAMaterias\SistemaInscripcionAMaterias\obj\Debug\SistemaInscripcionAMaterias.exe
+C:\Users\ASUS\Desktop\sistemas de infor\cai 2\Github\GrupoKInscripcion\SistemaInscripcionAMaterias\SistemaInscripcionAMaterias\obj\Debug\SistemaInscripcionAMaterias.pdb
