@@ -12,19 +12,19 @@ namespace SistemaInscripcionAMaterias
         //public static Dictionary<int, Curso> cursos;
         public List<Curso> cursos = new List<Curso>(); 
 
-        const string nombreArchivo = "OfertaSistemas.txt";
+       
 
-        public OfertaAcademica() 
+        public OfertaAcademica(string archivo) 
         {
             
-            if (File.Exists(nombreArchivo)) 
+            if (File.Exists(archivo)) 
             {
-                using (var reader = new StreamReader(nombreArchivo)) 
+                using (var reader = new StreamReader(archivo)) 
                 {
                     while (!reader.EndOfStream) 
                     {
                         var linea = reader.ReadLine();
-                        if (linea == "Codigo Curso|Titular|Nombre Materia|Dias|Horario")
+                        if (linea == "Codigo Curso|Titular|Nombre Materia|Dias|Horarios")
                         {
                             continue;
                         }
@@ -44,7 +44,7 @@ namespace SistemaInscripcionAMaterias
             Console.WriteLine("****************\nOferta Academica:\n****************");
             foreach(Curso curso in cursos)
             {
-                Console.WriteLine($"Codigo Curso: {curso.CodigoCurso} - Nombre Materia {curso.NombreMateria}"); 
+                Console.WriteLine($"Codigo Curso: {curso.CodigoCurso} - Nombre Materia: {curso.NombreMateria}"); 
             }
         }
     }

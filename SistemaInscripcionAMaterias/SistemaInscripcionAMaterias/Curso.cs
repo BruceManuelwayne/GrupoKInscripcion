@@ -8,7 +8,7 @@ namespace SistemaInscripcionAMaterias
 {
     class Curso
     {
-        public int CodigoCurso { get; set; }
+        public string CodigoCurso { get; set; }
 
         public string Titular { get; set;  }
 
@@ -28,7 +28,7 @@ namespace SistemaInscripcionAMaterias
         public Curso(string linea) 
         {
             var datos = linea.Split('|');
-            CodigoCurso = int.Parse(datos[0]);
+            CodigoCurso = datos[0];
             Titular = datos[1];
             NombreMateria = datos[2];
             Dias = datos[3];

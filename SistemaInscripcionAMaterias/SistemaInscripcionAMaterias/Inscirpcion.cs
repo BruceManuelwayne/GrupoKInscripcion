@@ -11,11 +11,33 @@ namespace SistemaInscripcionAMaterias
     {
         public int NumeroLegajo { get; set; }
 
-        public int LegajoAlumno { get; set;  }
+        public int Registro { get; set; }
 
-        public string InstanciaInscirpcion { get; set;  }
+        public int CodigoCurso { get; set; }
 
-        //public static List<Materias>[3] materias  
+        public int CodCursoAlternativo { get; set; }
+        
+        public string InstanciaInscirpcion { get; set; }
+
+
+        public DateTime Fecha { get; set;  }
+
+       
+
+        public Inscripcion(int legajo,int registro, string instancia,  int codigoCurso, int codCursoAlt, DateTime fecha) 
+        {
+            NumeroLegajo = legajo;
+            Registro = registro;
+            InstanciaInscirpcion = instancia; 
+            CodigoCurso = codigoCurso;
+            CodCursoAlternativo = codCursoAlt; 
+
+
+        }
+
+
+        
+        List<Curso> cursos = new List<Curso>(4);  
         //pedir carrera
         //mostrar materias segun carrera
         public Inscripcion() 
@@ -38,21 +60,21 @@ namespace SistemaInscripcionAMaterias
                 switch (opcion)
                 {
                     case "1":
-                        SeleccionCarrera();
+                        SeleccionCarrera("OfertaRegularSistemas.txt");
                         break;
 
                     case "2":
-                        //MostrarMaterias(opcion);
+                        SeleccionCarrera("OfertaRegularContador.txt");
                         break;
                     case "3":
-                        // MostrarMaterias(opcion);
+                        SeleccionCarrera("OfertaRegularAdmin.txt"); 
                         break;
                     case "4":
-                        //MostrarMaterias(opcion);
+                        SeleccionCarrera("OfertaRegularEconomia.txt");
                         break;
                     case "5":
 
-                        //MostrarMAterias(opcion); 
+                        SeleccionCarrera("OfertaRegularActuario.txt");
                         break;
                     case "9":
                         salir = true;
@@ -66,12 +88,17 @@ namespace SistemaInscripcionAMaterias
         }
        // necesitamos validar aca que carrera para despues mandar ese string para selecionar que arhivo vamos a leer, nuestro filtro abre cierto txt
 
-        public void SeleccionCarrera() 
+        public void SeleccionCarrera(string archivo) 
         {
-            OfertaAcademica ofertaSistemas = new OfertaAcademica();
+            OfertaAcademica ofertaSistemas = new OfertaAcademica(archivo);
             ofertaSistemas.MostrarOferta();
             Console.ReadKey();
         }
 
+        public void SeleccionMateria(string codigo) 
+        {
+            
+
+        }
     }
 }
