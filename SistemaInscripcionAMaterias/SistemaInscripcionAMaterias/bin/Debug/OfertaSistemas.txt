@@ -1,0 +1,2 @@
+Codigo Curso|Titular|Nombre Materia|Dias|Horario
+010|Fernandez|Calculo Financiero| lunes jueves| 13-15

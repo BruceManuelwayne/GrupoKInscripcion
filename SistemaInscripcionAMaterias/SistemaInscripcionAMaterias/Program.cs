@@ -15,6 +15,7 @@ namespace SistemaInscripcionAMaterias
             {
 
                 mostrarMenu = Menu.MostrarMenu(); 
+                
             }
         }
     }

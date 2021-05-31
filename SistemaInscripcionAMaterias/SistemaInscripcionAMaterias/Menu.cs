@@ -12,18 +12,22 @@ namespace SistemaInscripcionAMaterias
 
         public static bool MostrarMenu()
         {
+            Alumno sessionActiva = Alumno.AlumnoIngresado();   
+           
+            
+            Console.WriteLine($"--------------Bienvenido {sessionActiva.Nombre}, {sessionActiva.Apellido} -----Legajo:{sessionActiva.Legajo}---------------------------"); 
             Console.WriteLine("---------------------------------Inscirpcion Regular---------------------------------");
             Console.WriteLine("Presiona cualquier tecla para iniciar la Inscripcion Regular o ingrese exit para salir");
             Console.WriteLine("-------------------------------------------------------------------------------------");
             string ingreso = Console.ReadLine().ToUpperInvariant();
 
-            if (ingreso == "FIN")
+            if (ingreso == "EXIT")
             {
                 return false;
             }
             else 
             {
-                var iniciar=Inscirpcion.IniciarInscripcion(); 
+                Inscripcion Iniciar = new Inscripcion();
                 return true;
             }
 
