@@ -48,7 +48,7 @@ namespace SistemaInscripcionAMaterias
             }
         }
 
-        public bool ValidarCurso(string codigo) 
+        public  bool ValidarCurso(string codigo) 
         {
             foreach (Curso curso in cursos) 
             {

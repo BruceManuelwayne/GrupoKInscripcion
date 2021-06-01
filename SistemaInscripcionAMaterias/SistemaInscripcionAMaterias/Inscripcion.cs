@@ -99,8 +99,10 @@ namespace SistemaInscripcionAMaterias
         public void SeleccionMateria() 
         {
            var cursoSelecionado = Ingresos.IngresarCodMateria("Ingrese Codigo de materia", 5, 7);
-            bool existe = OfertaAcademica.ValidarMateria(cursoSelecionado); 
-            
+            // bool existe = OfertaAcademica.ValidarCurso(cursoSelecionado); no funciona
+          
+
+
         }
        
     }
