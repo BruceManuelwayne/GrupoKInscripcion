@@ -9,9 +9,9 @@ namespace SistemaInscripcionAMaterias
     class Alumno
     {
         public string Nombre { get; set;  }  
-        
         public string Apellido { get; set;  }
         public int Registro { get; set;  }
+
 
 
 

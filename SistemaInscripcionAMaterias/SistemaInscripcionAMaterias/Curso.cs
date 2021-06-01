@@ -18,9 +18,7 @@ namespace SistemaInscripcionAMaterias
 
         public string Hora { get; set; }
 
-        public int Cupo { get; set; }
-        
-        public float Ranking { get; set; }
+  
 
         public Curso() { }
         // Formato de txt Oferta
