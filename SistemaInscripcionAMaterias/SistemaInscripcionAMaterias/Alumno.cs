@@ -8,10 +8,11 @@ namespace SistemaInscripcionAMaterias
 {
     class Alumno
     {
-        public string Nombre { get; set;  }  
-        public string Apellido { get; set;  }
-        public int Registro { get; set;  }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public int Registro { get; set; }
 
+        public int CodigoCarrera{get; set;}
 
 
 
@@ -29,6 +30,8 @@ namespace SistemaInscripcionAMaterias
             alumnoLogeado.Apellido = "Lopez";
           
             alumnoLogeado.Registro = 877301;
+
+            alumnoLogeado.CodigoCarrera = 1; 
   
             //alumnoLogeado.InfoAlumno(alumnoLogeado.Nombre, alumnoLogeado.Apellido, alumnoLogeado.Legajo);
 

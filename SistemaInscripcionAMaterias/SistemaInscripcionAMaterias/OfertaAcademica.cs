@@ -47,5 +47,20 @@ namespace SistemaInscripcionAMaterias
                 Console.WriteLine($"Codigo Curso: {curso.CodigoCurso} - Nombre Materia: {curso.NombreMateria}"); 
             }
         }
+
+        public bool ValidarCurso(string codigo) 
+        {
+            foreach (Curso curso in cursos) 
+            {
+                if (curso.CodigoCurso == codigo) 
+                {
+                    return true;
+                     
+                }
+                Console.WriteLine("Codigo Ingresado inexistente , ingrese otro codigo");
+                
+            }
+            return false;
+        }
     }
 }

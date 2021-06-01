@@ -8,6 +8,7 @@ namespace SistemaInscripcionAMaterias
 {
     class Curso
     {
+        //public int CodigoMateria { get; set; }
         public string CodigoCurso { get; set; }
 
         public string Titular { get; set;  }
@@ -22,10 +23,11 @@ namespace SistemaInscripcionAMaterias
 
         public Curso() { }
         // Formato de txt Oferta
-        //Codigo Curso|Titular|Nombre Materia|Dias|Horario
+        //Codigo Materia|Codigo Curso|Titular|Nombre Materia|Dias|Horario
         public Curso(string linea) 
         {
             var datos = linea.Split('|');
+            // CodigoMateria = int.Parse(datos[0]);
             CodigoCurso = datos[0];
             Titular = datos[1];
             NombreMateria = datos[2];

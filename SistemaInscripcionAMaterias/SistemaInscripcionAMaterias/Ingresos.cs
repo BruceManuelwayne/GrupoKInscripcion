@@ -42,5 +42,21 @@ namespace SistemaInscripcionAMaterias
                 return numero;
             }
         }
+        public static string IngresarCodMateria(string texto, int largoMin, int largoMax)
+        {
+            while (true)
+            {
+                Console.WriteLine(texto);
+                string ingreso = Console.ReadLine();
+
+                if (ingreso.Length < largoMin || ingreso.Length > largoMax)
+                {
+                    Console.WriteLine($"Debe ingresar un codigo de materia ejemplo '252/2'");
+                    continue;
+                }
+                return ingreso;
+            }
+        }
+
     }
 }

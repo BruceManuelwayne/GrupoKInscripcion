@@ -17,7 +17,7 @@ namespace SistemaInscripcionAMaterias
 
         public int CodCursoAlternativo { get; set; }
         
-        public string InstanciaInscirpcion { get; set; }
+        public string InstanciaInscripcion { get; set; }
 
 
         public DateTime Fecha { get; set;  }
@@ -28,7 +28,7 @@ namespace SistemaInscripcionAMaterias
         {
             NumeroLegajo = legajo;
             Registro = registro;
-            InstanciaInscirpcion = instancia; 
+            InstanciaInscripcion = instancia; 
             CodigoCurso = codigoCurso;
             CodCursoAlternativo = codCursoAlt; 
 
@@ -36,7 +36,7 @@ namespace SistemaInscripcionAMaterias
         }
 
 
-        
+        //List<Oferta> ofertaCarrera = new List<Oferta>();
         List<Curso> cursos = new List<Curso>(4);  
         //pedir carrera
         //mostrar materias segun carrera
@@ -92,13 +92,16 @@ namespace SistemaInscripcionAMaterias
         {
             OfertaAcademica ofertaSistemas = new OfertaAcademica(archivo);
             ofertaSistemas.MostrarOferta();
-            Console.ReadKey();
+            SeleccionMateria();
+
         }
 
-        public void SeleccionMateria(string codigo) 
+        public void SeleccionMateria() 
         {
+           var cursoSelecionado = Ingresos.IngresarCodMateria("Ingrese Codigo de materia", 5, 7);
+            bool existe = OfertaAcademica.ValidarMateria(cursoSelecionado); 
             
-
         }
+       
     }
 }
