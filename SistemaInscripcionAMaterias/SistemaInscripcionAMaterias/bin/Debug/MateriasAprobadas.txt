@@ -1,0 +1,4 @@
+Registro|Codigo Materia
+877301|276
+877301|279
+

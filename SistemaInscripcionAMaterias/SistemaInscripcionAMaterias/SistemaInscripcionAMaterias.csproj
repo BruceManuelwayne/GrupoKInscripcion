@@ -47,6 +47,7 @@
     <Compile Include="Curso.cs" />
     <Compile Include="Ingresos.cs" />
     <Compile Include="Inscripcion.cs" />
+    <Compile Include="MateriasAprobadas.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="OfertaAcademica.cs" />
     <Compile Include="Program.cs" />

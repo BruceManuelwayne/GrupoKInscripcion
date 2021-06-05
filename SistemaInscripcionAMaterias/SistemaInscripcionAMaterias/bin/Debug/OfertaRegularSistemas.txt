@@ -1,26 +1,26 @@
-﻿Codigo Curso|Titular|Nombre Materia|Dias|Horarios
-276/3|Rondinone Gonzalo|CALCULO FINANCIERO|Lu\Ju|09a11
-276/4|Tasat Jose Mario Marcelo|CALCULO FINANCIERO|Lu\Ju|11a13
-276/5|Fregeiro Clarisa Anabella|CALCULO FINANCIERO|Ma\Vi|17a19
-276/6|Thomasz Esteban Otto|CALCULO FINANCIERO|Ma\Vi|17a19
-276/7|Stefanidis Pablo|CALCULO FINANCIERO|Lu\Ju|19a21
-276/8|Artuso Carolina Gabriela|CALCULO FINANCIERO|Ma\Vi|19a21
-276/9|Barone Pascual Marcelo|CALCULO FINANCIERO|Lu\Mi\Ju|21a23
-279/1|Bruni Julio Cesar|ADMINISTRACION FINANCIERA|Lu\Mi\Ju|07a09
-279/2|Retorta Marcelo Alejandro|ADMINISTRACION FINANCIERA|Lu\Mi\Ju|07a09
-279/3|Barrera Luis Adrian|ADMINISTRACION FINANCIERA|Lu\Mi\Ju|09a11
-279/5|Porto Jose Manuel|ADMINISTRACION FINANCIERA|Lu\Mi\Ju|15a17
-279/6|Farroni Jose Luis|ADMINISTRACION FINANCIERA|Lu\Mi\Ju|17a19
-279/7|Garra Maria Rosario|ADMINISTRACION FINANCIERA|Lu\Mi\Ju|17a19
-279/9|Ariganello Claudio Alberto|ADMINISTRACION FINANCIERA|Lu\Mi\Ju|19a21
-452/1|Gorrochategui Nora Liliana|SOCIOLOGIA DE LA ORGANIZACIÓN|Lu\Ju|09a11
-452/2|Fassio Adriana Norma -Rutty Maria Gabriela|SOCIOLOGIA DE LA ORGANIZACIÓN|Ma\Vi|11a13
-452/3|Alvarez Fernando Diego|SOCIOLOGIA DE LA ORGANIZACIÓN|Ma\Vi|19a21
-452/4|Wagener Marina|SOCIOLOGIA DE LA ORGANIZACIÓN|Ma\Vi|21a23
-651/1|Spehrs Adriana Renee|LOGICA|Ma\Vi|09a11
-651/2|Legris Javier -Valiño Valeria Sol|LOGICA|Ma\Vi|13a15
-657/1|Fernandez Blanco Maria Laura|SISTEMAS DE DATOS|Ma\Vi|07a09
-657/2|Schneider Gustavo Hernan|SISTEMAS DE DATOS|Ma\Vi|19a21
-1652/1|Allocati Hector|TEORIA DE LOS LENGUAJES Y ALGORITMOS|Lu\Ju|07a09
-1652/2|Veriansky Victor Gustavo|TEORIA DE LOS LENGUAJES Y ALGORITMOS|Lu\Ju|19a21
-1652/3|Arevalo Pla Juan Jose|TEORIA DE LOS LENGUAJES Y ALGORITMOS|Lu\Ju|21a23
+Codigo Materia|Codigo Curso|Titular|Materia|Dias |Horarios
+276|3|Rondinone Gonzalo|CALCULO FINANCIERO |Lu\Ju|09a11
+276|4|Tasat Jose Mario Marcelo|CALCULO FINANCIERO |Lu\Ju|11a13
+276|5|Fregeiro Clarisa Anabella|CALCULO FINANCIERO |Ma\Vi|17a19
+276|6|Thomasz Esteban Otto|CALCULO FINANCIERO |Ma\Vi|17a19
+276|7|Stefanidis Pablo|CALCULO FINANCIERO |Lu\Ju|19a21
+276|8|Artuso Carolina Gabriela|CALCULO FINANCIERO |Ma\Vi|19a21
+276|9|Barone Pascual Marcelo|CALCULO FINANCIERO |Lu\Mi\Ju|21a23
+279|1|Bruni Julio Cesar|ADMINISTRACION FINANCIERA|Lu\Mi\Ju|07a09
+279|2|Retorta Marcelo Alejandro|ADMINISTRACION FINANCIERA|Lu\Mi\Ju|07a09
+279|3|Barrera Luis Adrian|ADMINISTRACION FINANCIERA|Lu\Mi\Ju|09a11
+279|5|Porto Jose Manuel|ADMINISTRACION FINANCIERA|Lu\Mi\Ju|15a17
+279|6|Farroni Jose Luis|ADMINISTRACION FINANCIERA|Lu\Mi\Ju|17a19
+279|7|Garra Maria Rosario|ADMINISTRACION FINANCIERA|Lu\Mi\Ju|17a19
+279|9|Ariganello Claudio Alberto|ADMINISTRACION FINANCIERA|Lu\Mi\Ju|19a21
+452|1|Gorrochategui Nora Liliana|SOCIOLOGIA DE LA ORGANIZACIÓN|Lu\Ju|09a11
+452|2|Fassio Adriana Norma -Rutty Maria Gabriela|SOCIOLOGIA DE LA ORGANIZACIÓN|Ma\Vi|11a13
+452|3|Alvarez Fernando Diego|SOCIOLOGIA DE LA ORGANIZACIÓN|Ma\Vi|19a21
+452|4|Wagener Marina|SOCIOLOGIA DE LA ORGANIZACIÓN|Ma\Vi|21a23
+651|1|Spehrs Adriana Renee|LOGICA|Ma\Vi|09a11
+651|2|Legris Javier -Valiño Valeria Sol|LOGICA|Ma\Vi|13a15
+657|1|Fernandez Blanco Maria Laura|SISTEMAS DE DATOS|Ma\Vi|07a09
+657|2|Schneider Gustavo Hernan|SISTEMAS DE DATOS|Ma\Vi|19a21
+1652|1|Allocati Hector|TEORIA DE LOS LENGUAJES Y ALGORITMOS|Lu\Ju|07a09
+1652|2|Veriansky Victor Gustavo|TEORIA DE LOS LENGUAJES Y ALGORITMOS|Lu\Ju|19a21
+1652|3|Arevalo Pla Juan Jose|TEORIA DE LOS LENGUAJES Y ALGORITMOS|Lu\Ju|21a23

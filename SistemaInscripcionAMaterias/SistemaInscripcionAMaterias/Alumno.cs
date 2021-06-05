@@ -14,6 +14,8 @@ namespace SistemaInscripcionAMaterias
 
         public int CodigoCarrera{get; set;}
 
+        List<MateriasAprobadas> MateriasAprobadas = new List<MateriasAprobadas>(); 
+
 
 
      
