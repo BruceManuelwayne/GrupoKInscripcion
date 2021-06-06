@@ -10,6 +10,7 @@ namespace SistemaInscripcionAMaterias
     {
         static void Main(string[] args) 
         {
+
             bool mostrarMenu = true;
             while (mostrarMenu) 
             {
@@ -17,6 +18,11 @@ namespace SistemaInscripcionAMaterias
                 mostrarMenu = Menu.MostrarMenu(); 
                 
             }
+           
+         
         }
+        
     }
 }
+
+   

@@ -42,6 +42,7 @@ namespace SistemaInscripcionAMaterias
         //mostrar materias segun carrera
         public Inscripcion() 
         {
+            
             bool salir = false;
             do
             {
@@ -98,8 +99,8 @@ namespace SistemaInscripcionAMaterias
 
         public void SeleccionMateria() 
         {
-           var cursoSelecionado = Ingresos.IngresarCodMateria("Ingrese Codigo de materia", 5, 7);
-            // bool existe = OfertaAcademica.ValidarCurso(cursoSelecionado); no funciona
+           int materiaSelecionada = Ingresos.IngresarNumero("Ingrese Codigo de materia","El codigo ingresado no es valida, ingrese otro:");
+           bool existe = OfertaAcademica.ValidarCurso(materiaSelecionada); 
           
 
 

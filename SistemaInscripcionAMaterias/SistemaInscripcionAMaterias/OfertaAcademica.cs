@@ -57,7 +57,7 @@ namespace SistemaInscripcionAMaterias
                     return true;
                      
                 }
-                Console.WriteLine("Codigo Ingresado inexistente , ingrese otro codigo");
+                Console.WriteLine("Codigo Materia Ingresado inexistente , ingrese otro codigo Materia");
                 
             }
             return false;

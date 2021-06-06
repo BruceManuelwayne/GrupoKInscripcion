@@ -23,7 +23,7 @@ namespace SistemaInscripcionAMaterias
                 return ingreso;
             }
         }
-        public static int IngresarNumero(string texto)
+        public static int IngresarNumero(string texto, string error)
         {
             while (true)
             {
@@ -36,7 +36,7 @@ namespace SistemaInscripcionAMaterias
 
                 if (!int.TryParse(ingreso, out numero))
                 {
-                    Console.WriteLine("Lo ingresado no es un numero, ingrese un numero por favor.");
+                    Console.WriteLine(error);
                     continue;
                 }
                 return numero;
@@ -51,7 +51,7 @@ namespace SistemaInscripcionAMaterias
 
                 if (ingreso.Length < largoMin || ingreso.Length > largoMax)
                 {
-                    Console.WriteLine($"Debe ingresar un codigo de materia ejemplo '252/2'");
+                    Console.WriteLine($"Debe ingresar un codigo de materia ejemplo '252/'");
                     continue;
                 }
                 return ingreso;

@@ -48,7 +48,20 @@ namespace SistemaInscripcionAMaterias
                 }
             }
         }
-
+        public List<MateriasAprobadas> ListaAlumno(int registro) 
+        {
+            foreach (MateriasAprobadas m in materiasaprobadas) 
+            {
+                if (m.Registro == registro) 
+                {
+                    materiasAprobadasAlumno.Add(m);
+                }
+            }
+            return materiasAprobadasAlumno;
+        }
+        
+            
+        
         
         
     }
