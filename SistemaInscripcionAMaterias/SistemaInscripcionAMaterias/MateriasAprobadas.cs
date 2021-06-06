@@ -16,6 +16,7 @@ namespace SistemaInscripcionAMaterias
         const string MA = "MateriasAprobadas.txt";
 
         List<MateriasAprobadas> materiasaprobadas = new List<MateriasAprobadas>();
+        List<MateriasAprobadas> materiasAprobadasAlumno = new List<MateriasAprobadas>(); 
      
         public MateriasAprobadas(string linea) 
         {
@@ -47,6 +48,8 @@ namespace SistemaInscripcionAMaterias
                 }
             }
         }
+
+        
         
     }
 }

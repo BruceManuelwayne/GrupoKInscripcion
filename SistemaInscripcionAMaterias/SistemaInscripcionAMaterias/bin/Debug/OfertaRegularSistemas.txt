@@ -1,4 +1,4 @@
-Codigo Materia|Codigo Curso|Titular|Materia|Dias |Horarios
+Codigo Materia|Codigo Curso|Titular|Materia|Dias|Horarios
 276|3|Rondinone Gonzalo|CALCULO FINANCIERO |Lu\Ju|09a11
 276|4|Tasat Jose Mario Marcelo|CALCULO FINANCIERO |Lu\Ju|11a13
 276|5|Fregeiro Clarisa Anabella|CALCULO FINANCIERO |Ma\Vi|17a19

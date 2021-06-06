@@ -24,7 +24,7 @@ namespace SistemaInscripcionAMaterias
                     while (!reader.EndOfStream) 
                     {
                         var linea = reader.ReadLine();
-                        if (linea == "Codigo Curso|Titular|Nombre Materia|Dias|Horarios")
+                        if (linea == "Codigo Materia|Codigo Curso|Titular|Materia|Dias|Horarios")
                         {
                             continue;
                         }
@@ -48,7 +48,7 @@ namespace SistemaInscripcionAMaterias
             }
         }
 
-        public  bool ValidarCurso(string codigo) 
+        public  bool ValidarCurso(int codigo) 
         {
             foreach (Curso curso in cursos) 
             {

@@ -8,7 +8,7 @@ namespace SistemaInscripcionAMaterias
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             bool mostrarMenu = true;
             while (mostrarMenu) 
