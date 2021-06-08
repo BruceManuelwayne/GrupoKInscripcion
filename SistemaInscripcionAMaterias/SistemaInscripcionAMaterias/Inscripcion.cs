@@ -37,7 +37,8 @@ namespace SistemaInscripcionAMaterias
 
 
         //List<Oferta> ofertaCarrera = new List<Oferta>();
-        List<Curso> cursos = new List<Curso>(4);  
+        List<Curso> cursos = new List<Curso>(4);
+        
         //pedir carrera
         //mostrar materias segun carrera
         public Inscripcion() 
@@ -94,15 +95,16 @@ namespace SistemaInscripcionAMaterias
             OfertaAcademica ofertaSistemas = new OfertaAcademica(archivo);
             ofertaSistemas.MostrarOferta();
             SeleccionMateria();
+            
 
         }
 
         public void SeleccionMateria() 
         {
-           int materiaSelecionada = Ingresos.IngresarNumero("Ingrese Codigo de materia","El codigo ingresado no es valida, ingrese otro:");
-           bool existe = OfertaAcademica.ValidarCurso(materiaSelecionada); 
-          
+           int materiaSelecionada = Ingresos.IngresarNumero("Ingrese Codigo de materia","El codigo debe ser un numero, ingrese otro:");
 
+
+            //var existe = ofertaSistemas.ValidarCurso(materiaSelecionada);
 
         }
        

@@ -11,8 +11,9 @@ namespace SistemaInscripcionAMaterias
 
 
         public static bool MostrarMenu()
-        {
-            Alumno sessionActiva = Alumno.AlumnoIngresado();   
+        {   
+            Alumno sessionActiva = Alumno.AlumnoIngresado();  
+            
            
             
             Console.WriteLine($"--------------Bienvenido {sessionActiva.Nombre}, {sessionActiva.Apellido} -----Legajo:{sessionActiva.Registro}---------------------------"); 
