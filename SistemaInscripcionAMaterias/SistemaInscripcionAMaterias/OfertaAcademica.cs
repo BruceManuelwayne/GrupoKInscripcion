@@ -39,6 +39,9 @@ namespace SistemaInscripcionAMaterias
             }
             
         }
+        public OfertaAcademica() 
+        {
+        }
         public void MostrarOferta() 
         {
             Console.WriteLine("****************\nOferta Academica:\n****************");

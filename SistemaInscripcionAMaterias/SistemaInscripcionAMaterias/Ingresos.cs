@@ -23,7 +23,7 @@ namespace SistemaInscripcionAMaterias
                 return ingreso;
             }
         }
-        public static int IngresarNumero(string texto, string error)
+        public static int IngresarNumeroRegistro(string texto, string error, int min, int max)
         {
             while (true)
             {
@@ -37,6 +37,11 @@ namespace SistemaInscripcionAMaterias
                 if (!int.TryParse(ingreso, out numero))
                 {
                     Console.WriteLine(error);
+                    continue;
+                }
+                if (numero < min || numero > max)
+                {
+                    Console.WriteLine($"Debe Ingresar un numero de registro entre {min} y {max}'");
                     continue;
                 }
                 return numero;
@@ -55,6 +60,30 @@ namespace SistemaInscripcionAMaterias
                     continue;
                 }
                 return ingreso;
+            }
+        }
+        public static int IngresarInt(string texto, string error, int min, int max)
+        {
+            while (true)
+            {
+
+                int numero;
+
+                Console.WriteLine(texto);
+
+                var ingreso = Console.ReadLine();
+
+                if (!int.TryParse(ingreso, out numero))
+                {
+                    Console.WriteLine(error);
+                    continue;
+                }
+                if (numero < min || numero > max)
+                {
+                    Console.WriteLine($"Debe Ingresar un numero entre {min} y {max}'");
+                    continue;
+                }
+                return numero;
             }
         }
 

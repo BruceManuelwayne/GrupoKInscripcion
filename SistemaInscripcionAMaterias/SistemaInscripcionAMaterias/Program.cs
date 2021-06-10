@@ -11,14 +11,19 @@ namespace SistemaInscripcionAMaterias
         static void Main(string[] args) 
         {
 
-            bool mostrarMenu = true;
-            while (mostrarMenu) 
-            {
+            //bool mostrarMenu = true;
+            //while (mostrarMenu) 
+            //{
 
-                mostrarMenu = Menu.MostrarMenu(); 
-                
-            }
-           
+            //    mostrarMenu = Menu.MostrarMenu(); 
+
+            //}
+            Inscripcion iniciar = new Inscripcion();
+            iniciar.GenerarArchivos();
+
+            iniciar.Login();
+            Console.ReadKey(); 
+
          
         }
         

@@ -1,0 +1,1 @@
+Registro|Codigo Carrera|Codigo Materia|Codigo Curso|Curso Alternativo|Fecha

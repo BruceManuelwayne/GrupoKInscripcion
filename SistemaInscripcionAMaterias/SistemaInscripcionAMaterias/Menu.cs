@@ -12,11 +12,11 @@ namespace SistemaInscripcionAMaterias
 
         public static bool MostrarMenu()
         {   
-            Alumno sessionActiva = Alumno.AlumnoIngresado();  
+             
             
            
             
-            Console.WriteLine($"--------------Bienvenido {sessionActiva.Nombre}, {sessionActiva.Apellido} -----Legajo:{sessionActiva.Registro}---------------------------"); 
+           
             Console.WriteLine("---------------------------------Inscirpcion Regular---------------------------------");
             Console.WriteLine("Presiona cualquier tecla para iniciar la Inscripcion Regular o ingrese exit para salir");
             Console.WriteLine("-------------------------------------------------------------------------------------");
@@ -36,5 +36,19 @@ namespace SistemaInscripcionAMaterias
             
             
         }
+        public static void SeleccionCarreraMenu() 
+        {
+            Console.WriteLine("Selecione la carrera:");
+
+            Console.WriteLine("1 - Sistemas De Informaccion");
+            Console.WriteLine("2 - Contabilidad");
+            Console.WriteLine("3 - Admin. De Empresas");
+            Console.WriteLine("4 - Economia");
+            Console.WriteLine("5 - Actuario");
+            Console.WriteLine("9 - Salir ");
+
+            Console.WriteLine("Ingrese una opción y presione [Enter]");
+          
+            }
     }
 }

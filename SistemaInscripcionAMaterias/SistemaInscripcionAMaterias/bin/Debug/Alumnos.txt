@@ -1,0 +1,17 @@
+Registro|Nombre|Apellido|Codigo carrera|Condicion
+884392|Mariano|Gonzalez|1|Regular
+873482|Ines|Perez|3|Regular
+885439|Esteban|Icardi|4|No regular
+864835|Cristian|Gomez|5|Regular
+871249|Florencia|Maran|6|Regular
+884540|Paula|Estevez|3|Regular
+875219|Lucia|Lucas|2|No regular
+885971|German|Galindez|3|Regular
+873759|Michele|Stren|6|Regular
+862764|Beatriz|Pirez|5|No regular
+882853|Bruno|Alcantara|4|Regular
+884951|Pablo|Nuñez|3|Regular
+892058|Mariana|Visen|6|Regular
+861048|Rodrigo|Ojeda|1|No regular
+883850|Javier|Dominguez|3|No regular
+881053|Yamila|Diaz|4|Regular

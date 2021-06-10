@@ -21,13 +21,13 @@ namespace SistemaInscripcionAMaterias
 
         List<MateriasAprobadas> MateriasAprobadas = new List<MateriasAprobadas>();
 
-        public Alumno(string nombre, string apellido, int registro, int codigoCarrera, string condicion) 
+        public Alumno(int registro, string nombre, string apellido, int codigoCarrera, string condicion) 
         {
-            this.Nombre = nombre;
-            this.Apellido = apellido;
-            this.Registro = registro;
-            this.CodigoCarrera = codigoCarrera;
-            this.Condicion = condicion; 
+            Registro = registro;
+            Nombre = nombre;
+            Apellido = apellido;
+            CodigoCarrera = codigoCarrera;
+            Condicion = condicion; 
         }
      
 
@@ -35,7 +35,7 @@ namespace SistemaInscripcionAMaterias
         public string InfoAlumno => $"{Nombre}, {Apellido} - Registro {Registro}";
 
         public Alumno() { }
-        //registo|nombre|apellido|codigo carrera
+        //registo|nombre|apellido|codigo carrera|condicion
         public Alumno(string linea) 
         {
             var datos = linea.Split('|');
@@ -56,7 +56,7 @@ namespace SistemaInscripcionAMaterias
                     while (!reader.EndOfStream) 
                     {
                         var linea = reader.ReadLine();
-                        if (linea == "Registo|Nombre|Apellido|Codigo carrera")
+                        if (linea == "Registro|Nombre|Apellido|Codigo carrera|Condicion")
                         {
                             continue;
                         }
@@ -68,6 +68,28 @@ namespace SistemaInscripcionAMaterias
                     }
                 }
             }
+        }
+        public Alumno BuscarAlumno(int registro) 
+        {
+            int posicion = 0;
+            bool seEncontro = false;
+            Alumno alumnoEncontrado = new Alumno();
+            while (posicion < alumnos.Count && !seEncontro) 
+            {
+                if (alumnos[posicion].Registro == registro)
+                {
+                    seEncontro = true;
+                    alumnoEncontrado.Nombre = alumnos[posicion].Nombre;
+                    alumnoEncontrado.Apellido = alumnos[posicion].Apellido;
+                    alumnoEncontrado.Registro = alumnos[posicion].Registro;
+                    alumnoEncontrado.Condicion = alumnos[posicion].Condicion;
+                }
+                else
+                {
+                    posicion++;
+                }    
+            }   
+            return alumnoEncontrado;
         }
 
         //public static Alumno AlumnoIngresado()
