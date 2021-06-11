@@ -81,6 +81,31 @@ namespace SistemaInscripcionAMaterias
                 }
             }
         }
+        public bool BuscarSolicitud(int registro) 
+        {
+            int posicion = 0;
+            bool seEncontro = false;
+            while (posicion < solicitudes.Count && !seEncontro)
+            {
+                if (solicitudes[posicion].Registro == registro)
+                {
+                    seEncontro = true;
+                }
+                else
+                {
+                    posicion++; 
+                }
+
+            }
+            return seEncontro; 
+        }
+        public void AgregarSolicitud(List<Solicitud> solicitudActual) 
+        {
+            foreach (Solicitud solicitud in solicitudActual) 
+            {
+                solicitudes.Add(solicitud); 
+            }
+        }
         public string  ObtenerLineaDatos() => $"{Registro}|{CodigoCarrera}|{CodigoMateria}|{CodigoCurso}|{CodigoCursoAlt}|{Fecha}";
     }
 }

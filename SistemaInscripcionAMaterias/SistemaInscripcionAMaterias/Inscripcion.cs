@@ -67,6 +67,7 @@ namespace SistemaInscripcionAMaterias
                             {
                                 case 1:
                                     ValidarSolicitudPrevia(loginRegistro);
+
                                     break;
                             }
 
