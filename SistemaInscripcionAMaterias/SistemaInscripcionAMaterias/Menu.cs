@@ -36,7 +36,7 @@ namespace SistemaInscripcionAMaterias
             
             
         }
-        public static void SeleccionCarreraMenu() 
+        public static int SeleccionCarreraMenu() 
         {
             Console.WriteLine("Selecione la carrera:");
 
@@ -47,7 +47,10 @@ namespace SistemaInscripcionAMaterias
             Console.WriteLine("5 - Actuario");
             Console.WriteLine("9 - Salir ");
 
-            Console.WriteLine("Ingrese una opción y presione [Enter]");
+
+
+            int seleccion = Ingresos.IngresarInt("Ingrese una opción y presione[Enter]", "Debe ingresar un numero", 1, 9);
+            return seleccion; 
           
             }
     }

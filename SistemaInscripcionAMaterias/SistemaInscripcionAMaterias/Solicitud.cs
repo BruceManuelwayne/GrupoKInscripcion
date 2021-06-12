@@ -69,6 +69,20 @@ namespace SistemaInscripcionAMaterias
                 }
             }
         }
+
+        // si uiero generar un codigo legajo
+        public int contarLineas() 
+        {
+            int count = 0;
+            using (StreamReader reader = File.OpenText(NombreArchivo))
+            {
+                while (reader.ReadLine() != null)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
         public void Guardar() 
         {
             using (var writer = new StreamWriter(NombreArchivo, append: false)) 

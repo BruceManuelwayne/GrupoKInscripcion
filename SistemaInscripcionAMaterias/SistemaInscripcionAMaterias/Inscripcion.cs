@@ -11,13 +11,20 @@ namespace SistemaInscripcionAMaterias
     {
         public Inscripcion() { }
 
-        
 
+        Carrera carrera = new Carrera();
         Alumno alumnoLogeado = new Alumno();
+        PlanDeEstudio planDeEstudio = new PlanDeEstudio();
         int loginRegistro;
         int codigoCarrera;
-
+        Solicitud alumnoSolicitud = new Solicitud();
+        List<Solicitud> listaSolicitud = new List<Solicitud>();
+        MateriasAprobadas alumnoMatApro = new MateriasAprobadas();
+        List<Curso> OfertaSinMateriasAprobadas = new List<Curso>();
         
+        
+
+
 
         public void Login()
         {
@@ -35,7 +42,7 @@ namespace SistemaInscripcionAMaterias
                     salir = true;
                     break;
                 }
-                else 
+                else
                 {
                     bool alumnoNoExiste = false;
                     do
@@ -51,28 +58,71 @@ namespace SistemaInscripcionAMaterias
 
 
                         }
-                        else 
+                        else
                         {
                             Console.WriteLine($"Bienvenido {alumnoLogeado.Nombre} {alumnoLogeado.Apellido}\nNumero de registro:{alumnoLogeado.Registro}");
                             Console.WriteLine("-------------------------------------------------------------------------------------");
 
-                           var opcionMenu= Ingresos.IngresarInt("Selecione la instancia de inscricpion:" +
-                                                "\n1 - Inscirpcion Regular\n" +
-                                                "2 - Inscirpcion Cobertura de Vacantes\n" +
-                                                "3 - Inscirpcion curso intensivo\n" +
-                                                "4 - Salir\n","Debe ser un numoer intente de nuevo:", 1,4);
+                            int opcionMenu = Ingresos.IngresarInt("Selecione la instancia de inscricpion:" +
+                                                 "\n1 - Inscirpcion Regular\n" +
+                                                 "2 - Inscirpcion Cobertura de Vacantes\n" +
+                                                 "3 - Inscirpcion curso intensivo\n" +
+                                                 "4 - Salir\n", "Debe ingresar un numero, intente de nuevo:", 1, 4);
 
                             Console.WriteLine("---------------------------------------------------------------------------------------");
-                            switch (opcionMenu) 
+                            switch (opcionMenu)
                             {
                                 case 1:
-                                    ValidarSolicitudPrevia(loginRegistro);
+                                    if (!alumnoSolicitud.BuscarSolicitud(loginRegistro))
+                                    {
+                                        codigoCarrera = SeleccionCarrera();
 
+                                        string nombreArchivo = carrera.devolverNombreArchivo(codigoCarrera);
+                                        OfertaAcademica alumnoOferta = new OfertaAcademica(nombreArchivo);
+
+                                        List<MateriasAprobadas> listaMatApro = alumnoMatApro.ListaAlumno(loginRegistro);
+
+                                        
+                                        //listaMatApro = alumnoMatApro.ListaAlumno(loginRegistro);
+                                     
+
+                                        foreach (MateriasAprobadas m in listaMatApro) 
+                                        {
+                                            Console.WriteLine(m.CodigoMateria);
+
+                                        }
+                                        Console.ReadKey();
+
+                                        //alumnoOferta.MostrarOferta(); 
+
+
+
+
+
+                                        Console.WriteLine("Actualmente estas cursando las ultimas 4 materias? (Ingrese S para si y N para no)"); // falta validacion armar clase carrera con sus datos dada cada carrera. 
+
+
+
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Usted ya tiene una solicitud de inscripcion pendiente, presione cualquier tecla para volver");
+                                        
+                                    }
                                     break;
+                                    
+                                case 2:
+                                    Console.WriteLine("Esta instancia de inscripcion no esta habilitada en este momento, por favor revise el calendario academico.");
+                                    break;
+                                case 3:
+                                    Console.WriteLine("Esta instancia de inscripcion no esta habilitada en este momento, por favor revise el calendario academico.");
+                                    break;
+                                case 4:
+                                    break; 
                             }
 
 
-                           
+
                             string ingreso2 = Console.ReadLine().ToUpperInvariant();
 
                             if (ingreso == "EXIT")//revisar estructura no corta al ingresar exit.
@@ -93,7 +143,7 @@ namespace SistemaInscripcionAMaterias
                             salir = true;
                             break;
 
-                        } 
+                        }
 
                     } while (!alumnoNoExiste);
 
@@ -105,11 +155,13 @@ namespace SistemaInscripcionAMaterias
         }
 
 
-        public void GenerarArchivos() 
+        public void GenerarArchivos()
         {
             alumnoLogeado.generarArchivo();
+            alumnoMatApro.GenerarArchivo();
+
         }
-        public int SeleccionCarrera() 
+        public int SeleccionCarrera()
         {
             int carrera = Ingresos.IngresarInt("\nIngrese la carrera:\n" +
                                                 "\n1 - Sistemas\n" +
@@ -117,31 +169,27 @@ namespace SistemaInscripcionAMaterias
                                                 "3 - Administración\n" +
                                                 "4 - Economía\n" +
                                                 "5 - Actuario en Administración\n" +
-                                                "6 - Actuario en Economía\n","Debe ser un numero, intente de nuevo", 1, 6);
-            return carrera; 
+                                                "6 - Actuario en Economía\n", "Debe ser un numero, intente de nuevo", 1, 6);
+            return carrera;
 
         }
 
-        public void ValidarSolicitudPrevia(int registro) 
-        {
-            List<Solicitud> alumnoSolicitud = new List<Solicitud>(); 
 
-        }
-        public void SeleccionCarrera(string archivo)
+        public void MostrarOferta(string archivo)
         {
             OfertaAcademica ofertaSistemas = new OfertaAcademica(archivo);
             ofertaSistemas.MostrarOferta();
-            SeleccionMateria();
+
 
 
         }
 
-        public void SeleccionMateria()
+        public void seleccionmateria()
         {
-            //int materiaSelecionada = Ingresos.IngresarNumero("Ingrese Codigo de materia", "El codigo debe ser un numero, ingrese otro:");
+            int materiaselecionada = Ingresos.IngresarInt("ingrese codigo de materia", "el codigo debe ser un numero, ingrese otro:", 1, 9);
 
 
-            //var existe = ofertaSistemas.ValidarCurso(materiaSelecionada);
+            //var existe = ofertasistemas.validarcurso(materiaselecionada);
 
         }
 
@@ -188,12 +236,13 @@ namespace SistemaInscripcionAMaterias
         //    {
 
 
-    //    } while (!salir);
+        //    } while (!salir);
 
+    }
 }
         // necesitamos validar aca que carrera para despues mandar ese string para selecionar que arhivo vamos a leer, nuestro filtro abre cierto txt
 
        
        
        
-}
+

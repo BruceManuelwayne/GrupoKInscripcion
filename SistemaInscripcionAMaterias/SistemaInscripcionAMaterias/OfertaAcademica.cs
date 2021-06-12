@@ -11,8 +11,10 @@ namespace SistemaInscripcionAMaterias
     {
         //public static Dictionary<int, Curso> cursos;
         public List<Curso> cursos = new List<Curso>(); 
+        //public List<MateriasAprobadas> materiasAprobadasAlumno= new List<MateriasAprobadas>
 
-       
+
+        
 
         public OfertaAcademica(string archivo) 
         {
@@ -24,7 +26,7 @@ namespace SistemaInscripcionAMaterias
                     while (!reader.EndOfStream) 
                     {
                         var linea = reader.ReadLine();
-                        if (linea == "Codigo Materia|Codigo Curso|Titular|Materia|Dias|Horarios")
+                        if (linea == "Codigo Carrera|Codigo Materia|Codigo Curso|Titular|Materia|Dias|Horarios")
                         {
                             continue;
                         }
@@ -33,10 +35,12 @@ namespace SistemaInscripcionAMaterias
                             var curso = new Curso(linea);
                             cursos.Add(curso);
                         }
-                         
+                        
                     }
                 }
             }
+
+            
             
         }
         public OfertaAcademica() 
@@ -47,7 +51,7 @@ namespace SistemaInscripcionAMaterias
             Console.WriteLine("****************\nOferta Academica:\n****************");
             foreach(Curso curso in cursos)
             {
-                Console.WriteLine($"Codigo Curso: {curso.CodigoCurso} - Nombre Materia: {curso.NombreMateria}"); 
+                Console.WriteLine($" Codigo Mat: {curso.CodigoMateria} - Codigo Curso: {curso.CodigoCurso} - Nombre Materia: {curso.NombreMateria} - Horarios {curso.Hora} - Dias {curso.Dias}"); 
             }
         }
 
@@ -65,5 +69,7 @@ namespace SistemaInscripcionAMaterias
             }
             return false;
         }
+
+        
     }
 }
