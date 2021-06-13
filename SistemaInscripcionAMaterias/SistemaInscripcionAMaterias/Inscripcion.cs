@@ -11,18 +11,31 @@ namespace SistemaInscripcionAMaterias
     {
         public Inscripcion() { }
 
-
+        Correlativas correlativas = new Correlativas();
         Carrera carrera = new Carrera();
         Alumno alumnoLogeado = new Alumno();
         PlanDeEstudio planDeEstudio = new PlanDeEstudio();
-        int loginRegistro;
-        int codigoCarrera;
         Solicitud alumnoSolicitud = new Solicitud();
+
+        int loginRegistro;
+        string loginNombre;
+        string loginApellido;
+        int codigoCarrera;
+        int codigoMateria;
+        int codigoCurso;
+        int codigoCursoAlt;
+
+       
+
         List<Solicitud> listaSolicitud = new List<Solicitud>();
         MateriasAprobadas alumnoMatApro = new MateriasAprobadas();
-        List<Curso> OfertaSinMateriasAprobadas = new List<Curso>();
-        
-        
+        List<Correlativas> listaCarreraCorr = new List<Correlativas>();
+        //List<Correlativas> CorrelativasFaltantes = new List<Correlativas>();
+        //List<Curso> OfertaSinCorrelativasFaltantes = new List<Curso>();
+        //List<Curso> OfertaSinCorreSinMatApro = new List<Curso>();
+
+
+
 
 
 
@@ -75,31 +88,56 @@ namespace SistemaInscripcionAMaterias
                                 case 1:
                                     if (!alumnoSolicitud.BuscarSolicitud(loginRegistro))
                                     {
-                                        codigoCarrera = SeleccionCarrera();
+                                        // falta validacion armar clase carrera con sus datos dada cada carrera. 
+                                        //Console.WriteLine("Actualmente estas cursando las ultimas 4 materias? (Ingrese S para si y N para no)");
+                                        // if si int i<4 , generar validacion cantidad materias que faltan
 
-                                        string nombreArchivo = carrera.devolverNombreArchivo(codigoCarrera);
-                                        OfertaAcademica alumnoOferta = new OfertaAcademica(nombreArchivo);
 
-                                        List<MateriasAprobadas> listaMatApro = alumnoMatApro.ListaAlumno(loginRegistro);
 
-                                        
-                                        //listaMatApro = alumnoMatApro.ListaAlumno(loginRegistro);
-                                     
-
-                                        foreach (MateriasAprobadas m in listaMatApro) 
+                                        for (int i = 0; i < 3; i++) 
                                         {
-                                            Console.WriteLine(m.CodigoMateria);
+
+                                            codigoCarrera = SeleccionCarrera();
+                                            InscripcionMaterias(codigoCarrera);
+
 
                                         }
-                                        Console.ReadKey();
 
-                                        //alumnoOferta.MostrarOferta(); 
-
+                                        //OfertaSinMateriasAprobadas = alumnoOferta.OfertaAlumnoSinMatAp(listaMatApro);
 
 
 
+                                        //foreach (Correlativas corr in CorrelativasFaltantes)
+                                        //{
+                                        //    Console.WriteLine(corr.CodigoMateria);
+                                        //}
 
-                                        Console.WriteLine("Actualmente estas cursando las ultimas 4 materias? (Ingrese S para si y N para no)"); // falta validacion armar clase carrera con sus datos dada cada carrera. 
+
+
+
+
+                                        //listaMatApro = alumnoMatApro.ListaAlumno(loginRegistro);
+
+                                        //alumnoOferta.MostrarOfertaFiltrada(OfertaSinMateriasAprobadas);
+
+
+
+
+
+
+
+                                        //foreach (MateriasAprobadas m in listaMatApro)
+                                        //{
+                                        //    Console.WriteLine(m.CodigoMateria);
+
+                                        //}
+                                        //Console.ReadKey();
+
+                                        //
+
+
+
+                                        
 
 
 
@@ -159,6 +197,7 @@ namespace SistemaInscripcionAMaterias
         {
             alumnoLogeado.generarArchivo();
             alumnoMatApro.GenerarArchivo();
+            correlativas.GenerarArchivo();
 
         }
         public int SeleccionCarrera()
@@ -173,16 +212,45 @@ namespace SistemaInscripcionAMaterias
             return carrera;
 
         }
-
-
-        public void MostrarOferta(string archivo)
+        public void InscripcionMaterias(int codCarrera) 
         {
-            OfertaAcademica ofertaSistemas = new OfertaAcademica(archivo);
-            ofertaSistemas.MostrarOferta();
+            
 
+            string nombreArchivo = carrera.devolverNombreArchivo(codigoCarrera);
+            OfertaAcademica alumnoOferta = new OfertaAcademica(nombreArchivo);
 
+            List<MateriasAprobadas> listaMatApro = alumnoMatApro.ListaAlumno(loginRegistro);
+
+            listaCarreraCorr = correlativas.CorreSegunCarrera(codigoCarrera);
+            List<Correlativas> CorrelativasFaltantes = new List<Correlativas>();
+
+            CorrelativasFaltantes = correlativas.listaAlumnoCorr(listaMatApro, listaCarreraCorr);
+            List<Curso> OfertaSinCorrelativasFaltantes = new List<Curso>();
+            OfertaSinCorrelativasFaltantes = alumnoOferta.FiltrarOfertaCorrelativas(CorrelativasFaltantes);
+
+            List<Curso> OfertaSinCorreSinMatApro = new List<Curso>();
+            OfertaSinCorreSinMatApro = alumnoOferta.FiltrarMatAprobadas(listaMatApro, OfertaSinCorrelativasFaltantes);
+            alumnoOferta.MostrarOfertaFiltrada(OfertaSinCorreSinMatApro);
+            
+            codigoMateria = Ingresos.IngresarInt("Ingrese codigo de materia para inscripcion:","El codigo de materia debe ser un numero:",1,2000);
+            //validar codigo materia. estoy cansado a domrir. 
+            
 
         }
+
+        public void ClearLists() 
+        {
+            
+            //TODO cuando necesito limpiar las listas? 
+        }
+        //public void MostrarOferta(string archivo)
+        //{
+        //    OfertaAcademica ofertaSistemas = new OfertaAcademica(archivo);
+        //    ofertaSistemas.MostrarOferta();
+
+
+
+        //}
 
         public void seleccionmateria()
         {

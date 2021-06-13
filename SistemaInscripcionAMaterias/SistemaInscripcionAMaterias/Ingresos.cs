@@ -47,21 +47,32 @@ namespace SistemaInscripcionAMaterias
                 return numero;
             }
         }
-        public static string IngresarCodMateria(string texto, int largoMin, int largoMax)
-        {
-            while (true)
-            {
-                Console.WriteLine(texto);
-                string ingreso = Console.ReadLine();
 
-                if (ingreso.Length < largoMin || ingreso.Length > largoMax)
-                {
-                    Console.WriteLine($"Debe ingresar un codigo de materia ejemplo '252/'");
-                    continue;
-                }
-                return ingreso;
-            }
-        }
+       
+    
+        //public static string IngresarCodMateria(string texto, string error, List<Curso> cursosPendientes)
+        //{
+        //    while (true)
+        //    {
+        //        int numero;
+        //        bool existe = false;
+        //        int posicion = 0;
+        //        Console.WriteLine(texto);
+        //        var ingreso = Console.ReadLine();
+        //        if (!int.TryParse(ingreso, out numero))
+        //        {
+        //            Console.WriteLine(error);
+        //            continue;
+        //        }
+                
+                
+
+
+
+                
+        //    }
+          
+        //}
         public static int IngresarInt(string texto, string error, int min, int max)
         {
             while (true)

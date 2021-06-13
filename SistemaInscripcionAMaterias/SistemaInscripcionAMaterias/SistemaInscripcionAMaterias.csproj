@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Alumno.cs" />
     <Compile Include="Carrera.cs" />
+    <Compile Include="Correlativas.cs" />
     <Compile Include="Curso.cs" />
     <Compile Include="Ingresos.cs" />
     <Compile Include="Inscripcion.cs" />

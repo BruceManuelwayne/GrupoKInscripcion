@@ -46,14 +46,14 @@ namespace SistemaInscripcionAMaterias
         public OfertaAcademica() 
         {
         }
-        public void MostrarOferta() 
-        {
-            Console.WriteLine("****************\nOferta Academica:\n****************");
-            foreach(Curso curso in cursos)
-            {
-                Console.WriteLine($" Codigo Mat: {curso.CodigoMateria} - Codigo Curso: {curso.CodigoCurso} - Nombre Materia: {curso.NombreMateria} - Horarios {curso.Hora} - Dias {curso.Dias}"); 
-            }
-        }
+        //public void MostrarOferta() 
+        //{
+        //    Console.WriteLine("****************\nOferta Academica:\n****************");
+        //    foreach(Curso curso in cursos)
+        //    {
+        //        Console.WriteLine($" Codigo Mat: {curso.CodigoMateria} - Codigo Curso: {curso.CodigoCurso} - Nombre Materia: {curso.NombreMateria} - Horarios {curso.Hora} - Dias {curso.Dias}"); 
+        //    }
+        //}
 
         public  bool ValidarCurso(int codigo) 
         {
@@ -70,6 +70,42 @@ namespace SistemaInscripcionAMaterias
             return false;
         }
 
-        
+        //TODO: que pasa si devuelve nada? 
+        public List<Curso> FiltrarMatAprobadas(List<MateriasAprobadas> materiasAproAlumno, List<Curso> ofertaCursoFiltradaCorre)
+        {
+            
+            List<Curso> materiasFiltradasFinal = new List<Curso>();
+            
+
+            materiasFiltradasFinal = ofertaCursoFiltradaCorre.Where(x => !materiasAproAlumno.Any(y => y.CodigoMateria == x.CodigoMateria)).ToList();
+
+            return materiasFiltradasFinal;
+            
+        }
+
+        public List<Curso> FiltrarOfertaCorrelativas(List<Correlativas> alumnoCorreFaltantes)
+        {
+            List<Curso> ofertaFiltradaCorr = new List<Curso>();
+            ofertaFiltradaCorr = cursos.Where(x => !alumnoCorreFaltantes.Any(y => y.CodigoMateria == x.CodigoMateria)).ToList();
+            return ofertaFiltradaCorr;
+        }
+        public void MostrarOfertaFiltrada(List<Curso> cursosFiltrados)
+        {
+            Console.WriteLine("****************\nOferta Academica:\n****************");
+            foreach (Curso curso in cursosFiltrados)
+            {
+                Console.WriteLine($" Codigo Mat: {curso.CodigoMateria} - Codigo Curso: {curso.CodigoCurso} - Nombre Materia: {curso.NombreMateria} - Horarios {curso.Hora} - Dias {curso.Dias}");
+            }
+        }
     }
-}
+        //public List<int> ValidarRequisitos(List<Curso> MateriasSinAprobar, List<Correlativas> MateriasConCorrelativas) 
+        //{
+        //    List<int> requisitosFaltantes = new List<int>();
+
+        //}
+
+        
+
+
+ }
+
