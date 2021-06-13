@@ -8,6 +8,7 @@ namespace SistemaInscripcionAMaterias
 {
     public static class Ingresos
     {
+
         public static string IngresarCadena(string texto, int largoMin, int largoMax)
         {
             while (true)
@@ -23,6 +24,8 @@ namespace SistemaInscripcionAMaterias
                 return ingreso;
             }
         }
+       
+        
         public static int IngresarNumeroRegistro(string texto, string error, int min, int max)
         {
             while (true)
@@ -48,8 +51,25 @@ namespace SistemaInscripcionAMaterias
             }
         }
 
-       
-    
+        public static int IngresarIntSimple(string texto, string error) 
+        {
+            while (true) 
+            {
+                int numero;
+                Console.WriteLine(texto);
+                var ingreso = Console.ReadLine();
+                if(!int.TryParse(ingreso, out numero))
+                {
+                    Console.WriteLine(error);
+                    continue;
+                }
+                return numero;
+            }
+        }
+
+
+
+
         //public static string IngresarCodMateria(string texto, string error, List<Curso> cursosPendientes)
         //{
         //    while (true)
@@ -64,14 +84,14 @@ namespace SistemaInscripcionAMaterias
         //            Console.WriteLine(error);
         //            continue;
         //        }
-                
-                
 
 
 
-                
+
+
+
         //    }
-          
+
         //}
         public static int IngresarInt(string texto, string error, int min, int max)
         {

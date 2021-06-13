@@ -87,7 +87,8 @@ namespace SistemaInscripcionAMaterias
         {
             using (var writer = new StreamWriter(NombreArchivo, append: false)) 
             {
-                writer.WriteLine("Registro|Codigo Carrera|Codigo Materia|Codigo Curso|Curso Alternativo|Fecha");
+                using(var reader = new StreamReader(NombreArchivo))
+                
                 foreach (var solicitud in solicitudes) 
                 {
                     var linea = solicitud.ObtenerLineaDatos();

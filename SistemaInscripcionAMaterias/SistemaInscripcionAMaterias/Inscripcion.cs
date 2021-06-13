@@ -14,20 +14,16 @@ namespace SistemaInscripcionAMaterias
         Correlativas correlativas = new Correlativas();
         Carrera carrera = new Carrera();
         Alumno alumnoLogeado = new Alumno();
-        PlanDeEstudio planDeEstudio = new PlanDeEstudio();
         Solicitud alumnoSolicitud = new Solicitud();
 
         int loginRegistro;
-        string loginNombre;
-        string loginApellido;
         int codigoCarrera;
         int codigoMateria;
         int codigoCurso;
         int codigoCursoAlt;
 
-       
-
-        List<Solicitud> listaSolicitud = new List<Solicitud>();
+  
+        List<Solicitud> listaSolicitudActual = new List<Solicitud>();
         MateriasAprobadas alumnoMatApro = new MateriasAprobadas();
         List<Correlativas> listaCarreraCorr = new List<Correlativas>();
         //List<Correlativas> CorrelativasFaltantes = new List<Correlativas>();
@@ -99,52 +95,35 @@ namespace SistemaInscripcionAMaterias
 
                                             codigoCarrera = SeleccionCarrera();
                                             InscripcionMaterias(codigoCarrera);
-
+                                            if (i < 2) 
+                                            {
+                                                Console.WriteLine("Desea elegir otra materia para la inscripcion?(S/N)");
+                                                var key = Console.ReadKey(intercept: true);
+                                                if (key.Key == ConsoleKey.S)
+                                                {
+                                                    
+                                                }
+                                                if(key.Key == ConsoleKey.N)
+                                               
+                                                {
+                                                    i = 3;
+                                                }
+                                            }
 
                                         }
-
-                                        //OfertaSinMateriasAprobadas = alumnoOferta.OfertaAlumnoSinMatAp(listaMatApro);
-
-
-
-                                        //foreach (Correlativas corr in CorrelativasFaltantes)
-                                        //{
-                                        //    Console.WriteLine(corr.CodigoMateria);
-                                        //}
+                                        alumnoSolicitud.AgregarSolicitud(listaSolicitudActual);
+                                        GuardarSolicitud(listaSolicitudActual);
+                                        salir = true;
 
 
 
-
-
-                                        //listaMatApro = alumnoMatApro.ListaAlumno(loginRegistro);
-
-                                        //alumnoOferta.MostrarOfertaFiltrada(OfertaSinMateriasAprobadas);
-
-
-
-
-
-
-
-                                        //foreach (MateriasAprobadas m in listaMatApro)
-                                        //{
-                                        //    Console.WriteLine(m.CodigoMateria);
-
-                                        //}
-                                        //Console.ReadKey();
-
-                                        //
-
-
-
-                                        
 
 
 
                                     }
                                     else
                                     {
-                                        Console.WriteLine("Usted ya tiene una solicitud de inscripcion pendiente, presione cualquier tecla para volver");
+                                       Console.WriteLine("Usted ya tiene una solicitud de inscripcion pendiente, presione cualquier tecla para volver");
                                         
                                     }
                                     break;
@@ -161,22 +140,7 @@ namespace SistemaInscripcionAMaterias
 
 
 
-                            string ingreso2 = Console.ReadLine().ToUpperInvariant();
-
-                            if (ingreso == "EXIT")//revisar estructura no corta al ingresar exit.
-                            {
-                                salir = true;
-                                break;
-                            }
-                            else
-                            {
-
-                                Console.WriteLine("Ingrese el codigo de carrera:");
-                                codigoCarrera = Ingresos.IngresarInt("Ingrese Codigo de carrera", "Debe ser un numero, intente de nuevo:", 1, 6);
-
-
-
-                            }
+                           
                             Console.WriteLine("Saliendo del portal, hasta luego!");
                             salir = true;
                             break;
@@ -199,6 +163,7 @@ namespace SistemaInscripcionAMaterias
             alumnoMatApro.GenerarArchivo();
             correlativas.GenerarArchivo();
 
+
         }
         public int SeleccionCarrera()
         {
@@ -212,9 +177,9 @@ namespace SistemaInscripcionAMaterias
             return carrera;
 
         }
-        public void InscripcionMaterias(int codCarrera) 
+        public void InscripcionMaterias(int codCarrera)
         {
-            
+
 
             string nombreArchivo = carrera.devolverNombreArchivo(codigoCarrera);
             OfertaAcademica alumnoOferta = new OfertaAcademica(nombreArchivo);
@@ -231,84 +196,196 @@ namespace SistemaInscripcionAMaterias
             List<Curso> OfertaSinCorreSinMatApro = new List<Curso>();
             OfertaSinCorreSinMatApro = alumnoOferta.FiltrarMatAprobadas(listaMatApro, OfertaSinCorrelativasFaltantes);
             alumnoOferta.MostrarOfertaFiltrada(OfertaSinCorreSinMatApro);
+            List<int> materiasSelecionadas = new List<int>();
             
-            codigoMateria = Ingresos.IngresarInt("Ingrese codigo de materia para inscripcion:","El codigo de materia debe ser un numero:",1,2000);
-            //validar codigo materia. estoy cansado a domrir. 
+            while (true) 
+            {
+                bool existe= false;
+                codigoMateria = Ingresos.IngresarIntSimple("Ingrese codigo de materia para inscripcion:", "El codigo de materia debe ser un numero:");
+                existe = ExisteMateria(codigoMateria, OfertaSinCorreSinMatApro);
+                if (existe == false)
+                {
+                    Console.WriteLine($"El codigo {codigoMateria} no existe en la oferta, intente de nuevo");
+                }
+                else 
+                {
+                    existe = true;
+                    break;
+                }
+                
+
+
+            }
             
+            alumnoOferta.MostrarSegunMateria(OfertaSinCorreSinMatApro, codigoMateria);
+            while (true) 
+            {
+                bool existe = false;
+                codigoCurso = Ingresos.IngresarIntSimple("Para elegir el curso , ingrese el codigo de curso", "Debe ser un numero el codigo:");
+                existe = ExisteCurso(codigoCurso, OfertaSinCorreSinMatApro);
+                if (existe == false)
+                {
+                    Console.WriteLine($"El codigo {codigoCurso} no existe en la oferta, intente de nuevo");
+                }
+                else
+                {
+                    existe = true;
+                    break;
+                }
+
+            }
+            //materiasSelecionadas.Add(codigoMateria);
+            Console.WriteLine($"Desea agregar un curso alternativo?(S/N)\n");
+            var key = Console.ReadKey(intercept: true);
+            if (key.Key == ConsoleKey.S)
+            {
+                while (true)
+                {
+                    bool existe = false;
+                    codigoCursoAlt = Ingresos.IngresarIntSimple("Para elegir el curso , ingrese el codigo de curso", "Debe ingresar un numero, intente de nuevo:");
+                    existe = ExisteCurso(codigoCursoAlt, OfertaSinCorreSinMatApro);
+                    if (existe == false)
+                    {
+                        Console.WriteLine($"El codigo {codigoCurso} no existe en la oferta, intente de nuevo");
+                    }
+                    if (codigoCurso == codigoCursoAlt)
+                    {
+                        Console.WriteLine("El curso alternativo no puede ser igual al curso elegido, ingrese otro: ");
+                    }
+                    else
+                    {
+                        existe = true;
+                        break;
+                    }
+
+                }
+            }
+            else 
+            {
+                codigoCursoAlt = 0;
+            }
+
+            alumnoSolicitud = CrearSolicitud(loginRegistro, codigoCarrera, codigoMateria, codigoCurso, codigoCursoAlt);
+            bool confirma = ConfirmarSeleccion();
+            if (confirma == true)
+            {
+                
+                listaSolicitudActual.Add(alumnoSolicitud);
+              
+            }
+            
+
+            
+            //Console.WriteLine("hasta aca:");
+            //Console.ReadKey(); 
+
 
         }
+        public bool ConfirmarSeleccion() 
+        {
+            bool confirma = false; ;
+            Console.WriteLine($"Confirmas Seleccion de materia?(S/N)\n");
+            var key = Console.ReadKey(intercept: true);
+            do
+            {
+                if (key.Key == ConsoleKey.S)
+                {
+                    Console.WriteLine("Su seleccion ha sido procesada");
+                    confirma = true;
+                    break;
+                }
+                if (key.Key == ConsoleKey.N)
+                {
+                    confirma = false;
+                    Console.WriteLine("No fue procesada tu seleccion");
+                    break;
+                }
+                
 
+            } while (key.Key == ConsoleKey.S || key.Key == ConsoleKey.N);
+
+            return confirma;
+        }
+
+        public void GuardarSolicitud(List<Solicitud> listaSolParaGuardar) 
+        {
+            foreach (Solicitud s in listaSolParaGuardar) 
+            {
+                s.Guardar();
+            }
+            Console.WriteLine("\n-------------------------Lista de solicitud registrada!-------------------------------------\n");
+            ClearLists();
+        }
+        public Solicitud CrearSolicitud(int registro, int carrera, int materia, int curso, int cursoAlterantivo) 
+        {
+            DateTime fecha = DateTime.Now;
+            Solicitud nuevaSolicitud = new Solicitud(registro, carrera, materia, curso,cursoAlterantivo, fecha);
+            return nuevaSolicitud;
+        }
         public void ClearLists() 
         {
-            
+            listaCarreraCorr.Clear();
+
+            listaSolicitudActual.Clear();
             //TODO cuando necesito limpiar las listas? 
         }
         //public void MostrarOferta(string archivo)
         //{
         //    OfertaAcademica ofertaSistemas = new OfertaAcademica(archivo);
         //    ofertaSistemas.MostrarOferta();
-
-
-
-        //}
-
-        public void seleccionmateria()
+        public bool ExisteMateria(int codigo, List<Curso>oferta) 
         {
-            int materiaselecionada = Ingresos.IngresarInt("ingrese codigo de materia", "el codigo debe ser un numero, ingrese otro:", 1, 9);
+
+            int posicion = 0;
+            bool seEncontro=false;
+            while (posicion < oferta.Count && !seEncontro)
+            {
+                if (oferta[posicion].CodigoMateria == codigo)
+                {
+                    seEncontro = true;
 
 
-            //var existe = ofertasistemas.validarcurso(materiaselecionada);
+                }
+                else
+                {
+                    posicion++;
+                }
+
+            }return seEncontro;
+        }
+
+        public bool ExisteCurso(int codigo, List<Curso> oferta) 
+        {
+            int posicion = 0;
+            bool seEncontro = false;
+            while (posicion < oferta.Count && !seEncontro)
+            {
+                if (oferta[posicion].CodigoCurso == codigo)
+                {
+                    seEncontro = true;
+
+
+                }
+                else
+                {
+                    posicion++;
+                }
+
+            }
+            return seEncontro;
 
         }
 
-        //public int NumeroLegajo { get; set; }
-
-        //public int Registro { get; set; }
-
-        //public int CodigoCurso { get; set; }
-
-        //public int CodCursoAlternativo { get; set; }
-
-        //public string InstanciaInscripcion { get; set; }
-
-
-        //public DateTime Fecha { get; set;  }
 
 
 
-        //public Inscripcion(int legajo,int registro, string instancia,  int codigoCurso, int codCursoAlt, DateTime fecha) 
-        //{
-        //    NumeroLegajo = legajo;
-        //    Registro = registro;
-        //    InstanciaInscripcion = instancia; 
-        //    CodigoCurso = codigoCurso;
-        //    CodCursoAlternativo = codCursoAlt; 
-
-
-        //}
-
-
-        //List<Oferta> ofertaCarrera = new List<Oferta>();
-
-
-
-
-
-        //pedir carrera
-        //mostrar materias segun carrera
-        //public Inscripcion() 
-        //{
-
-        //    bool salir = false;
-        //    do
-        //    {
-
-
-        //    } while (!salir);
 
     }
+
 }
-        // necesitamos validar aca que carrera para despues mandar ese string para selecionar que arhivo vamos a leer, nuestro filtro abre cierto txt
+
+
+
 
        
        

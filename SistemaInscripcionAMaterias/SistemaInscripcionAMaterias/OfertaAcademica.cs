@@ -82,6 +82,14 @@ namespace SistemaInscripcionAMaterias
             return materiasFiltradasFinal;
             
         }
+        public void MostrarSegunMateria(List<Curso> oferta, int codigoMat) 
+        {
+            List<Curso> ListaCodigoMateria = new List<Curso>();
+
+            ListaCodigoMateria = oferta.Where(x => x.CodigoMateria == codigoMat).ToList();
+            MostrarOfertaFiltrada(ListaCodigoMateria);
+            
+        }
 
         public List<Curso> FiltrarOfertaCorrelativas(List<Correlativas> alumnoCorreFaltantes)
         {

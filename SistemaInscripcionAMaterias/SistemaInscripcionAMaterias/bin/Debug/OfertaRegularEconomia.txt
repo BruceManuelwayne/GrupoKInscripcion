@@ -1,0 +1,342 @@
+Codigo Carrera|Codigo Materia|Codigo Curso|Titular|Materia|Dias|Horarios
+4|248|1|Llamas Juana Maria|ESTADISTICA|Lu\Mi\Ju|07a09
+4|248|2|Nogues Cesar Eduardo|ESTADISTICA|Lu\Mi\Ju|07a09
+4|248|3|Gogni Valeria|ESTADISTICA|Ma\Mi\Vi|07a09
+4|248|4|Cantoni Rabolini Nelida Monica|ESTADISTICA|Lu\Mi\Ju|09a11
+4|248|5|Llamas Juana Maria|ESTADISTICA|Lu\Mi\Ju|09a11
+4|248|7|Larra Matias|ESTADISTICA|Lu\Ju\Sa|13a15
+4|248|8|Lepera Andrea Fabiana|ESTADISTICA|Lu\Mi\Ju|13a15
+4|248|9|Llamas Juana Maria|ESTADISTICA|Lu\Mi\Ju|17a19
+4|248|10|Nogues Cesar Eduardo|ESTADISTICA|Lu\Mi\Ju|19a21
+4|248|11|Palacios Patricia Elizabeth|ESTADISTICA|Lu\Mi\Ju|19a21
+4|248|12|Aparicio Rodrigo|ESTADISTICA|Lu\Mi\Ju|19a21
+4|248|13|Nogues Cesar Eduardo|ESTADISTICA|Lu\Mi\Ju|21a23
+4|248|14|Salaberry Natalia Romina|ESTADISTICA|Ma\Vi\Sa|07a09 Sa09a11
+4|248|70|Ghersi Liliana Beatriz|ESTADISTICA|Ma|09a11
+4|248|15|Grahl Alejandro Federico|ESTADISTICA|Lu\Mi\Ju|17a19
+4|248|16|Grahl Alejandro Federico|ESTADISTICA|Lu\Mi\Ju|19a21
+4|248|17|Wilson Fabio|ESTADISTICA|Lu\Mi\Ju|19a21
+4|248|18|Wilson Fabio|ESTADISTICA|Lu\Mi\Ju|21a23
+4|248|19|Rovner Gerardo|ESTADISTICA|Ma\Mi\Vi|21a23
+4|248|98||ESTADISTICA||
+4|248|20|Dreyfus Marcelo Daniel|ESTADISTICA|Ma\Mi\Vi|09a11
+4|248|21|Gutierrez Ezequiel Andres|ESTADISTICA|Lu\Mi\Ju|19a21
+4|248|22|Caviezel Pablo Nicolas|ESTADISTICA|Lu\Ju\Sa|07a09 Sa09a11
+4|248|23|Rossomando Gustavo Edgardo|ESTADISTICA|Ma\Mi\Vi|07a09
+4|248|24|Lasanta Tito Ignacio|ESTADISTICA|Ma\Mi\Vi|09a11
+4|248|25|Gutierrez Ezequiel Andres|ESTADISTICA|Ma\Mi\Vi|11a13
+4|248|26|Rossomando Gustavo Edgardo|ESTADISTICA|Ma\Mi\Vi|17a19
+4|248|27|Cueli Daniel Alejandro|ESTADISTICA|Lu\Mi\Ju|19a21
+4|248|28|Lopez Alfaro Sonia Olga|ESTADISTICA|Ma\Mi\Vi|19a21
+4|248|29|Gonzalez Daniel Alejandro|ESTADISTICA|Lu\Mi\Ju|21a23
+4|248|65|Albornoz Carlos Maximiliano|ESTADISTICA||
+4|248|30|Velardez Walter Fabian|ESTADISTICA|Lu\Mi\Ju|07a09
+4|248|31|Mutchinick Paula|ESTADISTICA|Lu\Mi\Ju|09a11
+4|248|32|Kaplan Krep Christian Lionel|ESTADISTICA|Lu\Mi\Ju|09a11
+4|248|33|Gosende Delas Maria Juliana|ESTADISTICA|Lu\Mi\Ju|11a13
+4|248|34|Gosende Delas Maria Juliana|ESTADISTICA|Lu\Mi\Ju|13a15
+4|248|35|Milia Daniel Alberto|ESTADISTICA|Lu\Mi\Ju|15a17
+4|248|36|Monti Sergio Nicolas|ESTADISTICA|Lu\Ju\Sa|19a21 Sa11a13
+4|248|37|Testore Nicolas Orlando|ESTADISTICA|Ma\Vi\Sa|19a21 Sa09a11
+4|248|38|Kaplan Krep Christian Lionel|ESTADISTICA|Ma\Mi\Vi|21a23
+4|248|39|Del Rosso Ezequiel Rodrigo Javier|ESTADISTICA|Ma\Mi\Vi|07a09
+4|248|40|Trajtenberg Luis Alberto|ESTADISTICA|Ma\Vi\Sa|07a09
+4|248|41|Burdisso Tamara|ESTADISTICA|Ma\Vi\Sa|09a11
+4|248|42|Gomez Roca Sebastian|ESTADISTICA|Lu\Mi\Ju|11a13
+4|248|43|Parras Diego Alejandro|ESTADISTICA|Ma\Mi\Vi|17a19
+4|248|44|Monti Sergio Nicolas|ESTADISTICA|Ma\Mi\Vi|19a21
+4|248|99||ESTADISTICA||
+4|284|1|Novo Monica Mabel|ANALISIS MATEMATICO II|Ma\Mi\Vi|07a09
+4|284|2|Chavez Christian Omar|ANALISIS MATEMATICO II|Lu\Mi\Ju|09a11
+4|284|3|Parma Andrea|ANALISIS MATEMATICO II|Lu\Mi\Ju|07a09
+4|284|4|Fernandez Maria Jose|ANALISIS MATEMATICO II|Lu\Mi\Ju|09a11
+4|284|5|Garcia Fronti Veronica Maria|ANALISIS MATEMATICO II|Lu\Mi\Ju|09a11
+4|284|6|Mutchinick Paula|ANALISIS MATEMATICO II|Lu\Mi\Ju|11a13
+4|284|7|Masci Martin Ezequiel|ANALISIS MATEMATICO II|Lu\Mi\Ju|17a19
+4|284|8|Cogorno Nicolas Alejandro|ANALISIS MATEMATICO II|Lu\Mi\Ju|19a21
+4|284|9|Gonzalez Daniel Alejandro|ANALISIS MATEMATICO II|Lu\Mi\Ju|19a21
+4|284|98||ANALISIS MATEMATICO II||
+4|284|10|Parma Andrea|ANALISIS MATEMATICO II|Lu\Mi\Ju|09a11
+4|284|11|Garcia Venturini Alejandro Ezequiel|ANALISIS MATEMATICO II|Lu\Mi\Ju|11a13
+4|284|12|Hernandez Carlos Luis|ANALISIS MATEMATICO II|Lu\Mi\Ju|09a11
+4|284|13|Hernandez Carlos Luis|ANALISIS MATEMATICO II|Lu\Mi\Ju|19a21
+4|284|99||ANALISIS MATEMATICO II||
+4|284|14|Rodriguez Vidal Raul -Arce Horacio Adrian|ANALISIS MATEMATICO II|Lu\Mi\Ju|13a15
+4|285|1|Cordoba Miguel Angel|ESTADISTICA II|Lu\Mi\Ju|07a09
+4|285|2|Trajtenberg Luis Alberto|ESTADISTICA II|Lu\Mi\Ju|07a09
+4|285|3|Vietri Silvia|ESTADISTICA II|Lu\Mi\Ju|09a11
+4|285|4|Nasif Salum Alejandro Omar|ESTADISTICA II|Lu\Mi\Ju|09a11
+4|285|5|Lasanta Tito Ignacio|ESTADISTICA II|Lu\Mi\Ju|13a15
+4|285|6|Lopez Carlos Daniel|ESTADISTICA II|Lu\Mi\Ju|19a21
+4|285|7|Lopez Carlos Daniel|ESTADISTICA II|Ma\Vi\Sa|19a21 Sa11a13
+4|288|1|Casparri Maria Teresa -Tarullo Eduardo Angel|MATEMATICA PARA ECONOMISTAS|Lu\Mi\Ju|09a11
+4|288|2|Garcia Fronti Javier Ignacio -Di Lalla Daniela Anahi|MATEMATICA PARA ECONOMISTAS|Lu\Mi\Ju|07a09
+4|288|3|Herrera Pablo Matias|MATEMATICA PARA ECONOMISTAS|Lu\Mi\Ju|15a17
+4|288|4|Garcia Fronti Javier Ignacio -Battocchio Matias Ezequiel|MATEMATICA PARA ECONOMISTAS|Lu\Mi\Ju|17a19
+4|288|5|Rodriguez Eduardo Alberto|MATEMATICA PARA ECONOMISTAS|Lu\Mi\Ju|19a21
+4|288|6|Fajfar Pablo Francisco|MATEMATICA PARA ECONOMISTAS|Lu\Mi\Ju|07a09
+4|288|7|Zaia Alejandra Cristina|MATEMATICA PARA ECONOMISTAS|Lu\Mi\Ju|11a13
+4|288|8|Vilker Ana Silvia|MATEMATICA PARA ECONOMISTAS|Lu\Mi\Ju|13a15
+4|551|1|Brufman Juana Zulema -Trajtenberg Luis Alberto|ECONOMETRIA|Lu\Mi\Ju|09a11
+4|551|2|Gonzalez Mirta Lidia|ECONOMETRIA|Lu\Mi\Ju|07a09
+4|551|3|Calicchio Nicolas Emilio|ECONOMETRIA|Lu\Mi\Ju|07a09
+4|551|99||ECONOMETRIA||
+4|551|4|Vitale Blanca Rosa|ECONOMETRIA|Ma\Vi\Sa|13a15
+4|551|5|Montes Rojas Gabriel Victorio|ECONOMETRIA|Lu\Mi\Ju|15a17
+4|551|6|Fabris Julio Eduardo|ECONOMETRIA|Ma\Vi\Sa|17a19 Sa09a11
+4|249|1|Tchordonkian Silvia|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|11a13
+4|249|2|Belini Claudio Fabian -Garibotti Maria Helena|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|09a11
+4|249|3|Colombo Edgardo Hugo|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|19a21
+4|249|4|Ruffolo Benedicto Flavio|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|07a09
+4|249|5|Dethiou Cecilia|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|07a09
+4|249|6|Dethiou Cecilia|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|17a19
+4|249|97||HISTORIA EC. Y SOCIAL ARGENTINA||
+4|249|7|Tearoti Silvia Aurora|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|19a21
+4|249|65|Manuli Martin Ariel|HISTORIA EC. Y SOCIAL ARGENTINA||
+4|249|8|Gonzalez Bollo Hernan Gustavo|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|09a11
+4|249|9|Rolandi Cristina Alejandra|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|11a13
+4|249|10|Banfi Jose Maria|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|13a15
+4|249|11|Stella Maria Elena|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|17a19
+4|249|12|Jauregui Anibal Pablo -Gomez Juan Lucas|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|21a23
+4|249|13|Ossona Jorge Luis|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|19a21
+4|249|14|Ossona Jorge Luis|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|21a23
+4|249|15|Palacio Silvana Priscila|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|09a11
+4|249|16|Llairo Maria De Monserrat -Gutierrez Miguel Francisco|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|09a11
+4|249|17|Ferronato Jorge|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|11a13
+4|249|18|Palacio Silvana Priscila|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|15a17
+4|249|19|Chiarini Sebastian Roberto|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|17a19
+4|249|20|Barry Viviana Cecilia|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|15a17
+4|249|21|Ferronato Jorge|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|17a19
+4|249|22|Bulcourf Carlos Gustavo Angel|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|09a11
+4|249|23|Bulcourf Carlos Gustavo Angel|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|11a13
+4|249|98||HISTORIA EC. Y SOCIAL ARGENTINA||
+4|249|24|Fernandez Diego Ariel|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|17a19
+4|249|25|Nassif Silvia Gabriela|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|09a11
+4|249|26|Villulla Juan Manuel|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|09a11
+4|249|27|Lopez Cantera Mercedes Fernanda|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|11a13
+4|249|28|Martinez Dougnac Gabriela|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|13a15
+4|249|29|Volkind Pablo|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|15a17
+4|249|70|Ortega Lucia Emilia|HISTORIA EC. Y SOCIAL ARGENTINA|Mi|17a19
+4|249|30|Magan Maria Victoria|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|09a11
+4|249|31|Sofia Ana Laura|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|09a11
+4|249|32|Bouco Carlos Enrique|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|07a09
+4|249|33|Bartolome Diana Alicia|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|09a11
+4|249|34|Pineau Agustin|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|17a19
+4|249|35|Mateu Maria Cristina|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|11a13
+4|249|36|Mateu Maria Cristina|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|19a21
+4|249|71|Bouco Carlos Enrique|HISTORIA EC. Y SOCIAL ARGENTINA|Mi|09a11
+4|249|37|Chelala Santiago Martin|HISTORIA EC. Y SOCIAL ARGENTINA|Mi\Sa|09a11
+4|249|38|Mariñansky Martin Pablo|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|17a19
+4|249|39|Alderete Mariano Leopoldo|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|17a19
+4|249|40|Maeso Maria Julieta|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|09a11
+4|249|41|Aguirre Norberto Ruben|HISTORIA EC. Y SOCIAL ARGENTINA|Mi\Sa|19a21 Sa11a13
+4|249|99||HISTORIA EC. Y SOCIAL ARGENTINA||
+4|249|85|Rapoport Mario Daniel -Brenta Noemi Liliana|HISTORIA EC. Y SOCIAL ARGENTINA|Ju|15a17
+4|249|42|Pierri Jose Alberto|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|15a17
+4|249|43|Mason Victor Camilo|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|21a23
+4|249|44|Cerra Angel Adolfo|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|07a09
+4|249|45|Rougier Marcelo Norberto|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|07a09
+4|249|46|Pampin Graciela Susana|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|15a17
+4|249|47|Sowter Leandro|HISTORIA EC. Y SOCIAL ARGENTINA|Lu\Ju|11a13
+4|249|48|Castro Claudio Carlos|HISTORIA EC. Y SOCIAL ARGENTINA|Ma\Vi|21a23
+4|249|96||HISTORIA EC. Y SOCIAL ARGENTINA||
+4|261|1|Lozada Castro Pablo|TEORIA POLITICA Y DCHO. PUBLICO|Lu\Ju|19a21
+4|261|2|Rubinstein Dario Martin|TEORIA POLITICA Y DCHO. PUBLICO|Ma\Vi|19a21
+4|261|3|Campos Rios Maximiliano|TEORIA POLITICA Y DCHO. PUBLICO|Ma\Vi|09a11
+4|261|4|Cifarelli Marcela Herminia|TEORIA POLITICA Y DCHO. PUBLICO|Ma\Vi|09a11
+4|261|5|Maurich Mario R.|TEORIA POLITICA Y DCHO. PUBLICO|Lu\Ju|15a17
+4|261|6|Carballo Frascá Alexandra Lorena|TEORIA POLITICA Y DCHO. PUBLICO|Ma\Vi|17a19
+4|261|7|Estevez Alejandro Miguel|TEORIA POLITICA Y DCHO. PUBLICO|Sa|09a13
+4|261|8|Cifarelli Marcela Herminia|TEORIA POLITICA Y DCHO. PUBLICO|Lu\Ju|11a13
+4|262|1|Pastor Joaquin Oscar|MACROECONOMIA|Ma\Mi\Vi|07a09
+4|262|2|Mastelli Franco|MACROECONOMIA|Lu\Mi\Ju|07a09
+4|262|3|Tubio Eleonora Veronica|MACROECONOMIA|Lu\Mi\Ju|09a11
+4|262|4|Rossignolo Dario Alejandro|MACROECONOMIA|Lu\Mi\Ju|11a13
+4|262|5|Bargados Ayelen Carmen|MACROECONOMIA|Ma\Mi\Vi|19a21
+4|262|6|Gasparini Cintia Natalia|MACROECONOMIA|Mi\Vi\Sa|19a21 Sa13a15
+4|262|7|Bernat Gonzalo|MACROECONOMIA|Ma\Mi\Vi|09a11
+4|262|8|Montero Gustavo Ariel|MACROECONOMIA|Ma\Mi|19a21
+4|283|1|Libman Emiliano|MACROECONOMIA II|Lu\Mi\Ju|07a09
+4|283|2|Zack Guido|MACROECONOMIA II|Lu\Mi\Ju|17a19
+4|283|3|Pierri Damian Rene|MACROECONOMIA II|Lu\Mi\Ju|19a21
+4|283|4|Fanelli Jose Maria Jesus|MACROECONOMIA II|Ma\Vi\Sa|17a19 Sa09a11
+4|283|5|Heymann Carlos Daniel|MACROECONOMIA II|Lu\Mi\Ju|09a11
+4|283|6|Rapetti Martin Gervasio|MACROECONOMIA II|Ma\Vi\Sa|11a13
+4|286|1|Aromi Jose Daniel|MICROECONOMIA II |Lu\Mi\Ju|11a13
+4|286|2|Ruiz Julio Argentino|MICROECONOMIA II |Lu\Mi\Ju|15a17
+4|286|3|Montes Rojas Gabriel Victorio|MICROECONOMIA II |Ma\Vi\Sa|17a19 Sa09a11
+4|286|4|Acosta Jorge Alan|MICROECONOMIA II |Ma\Vi\Sa|19a21 Sa11a13
+4|287|1|Abriata Bruno Dante|GEOGRAFIA ECONOMICA|Mi|09a11
+4|287|2|Liberali Ana Maria|GEOGRAFIA ECONOMICA|Mi|13a15
+4|287|3|Acha Patricia Monica|GEOGRAFIA ECONOMICA|Mi|17a19
+4|287|4|Gejo Omar Horacio|GEOGRAFIA ECONOMICA|Mi|21a23
+4|289|1|Ruggeri Cesar Hernan|EPISTEMOLOGIA DE LA ECONOMIA|Ju|09a11
+4|289|2|Maceri Sandra Beatriz|EPISTEMOLOGIA DE LA ECONOMIA|Mi|11a13
+4|289|3|Berneman Nicolas|EPISTEMOLOGIA DE LA ECONOMIA|Lu|17a19
+4|289|4|Weisman Diego Mauricio|EPISTEMOLOGIA DE LA ECONOMIA|Mi|19a21
+4|289|5|Pustilnik Ruth Irene|EPISTEMOLOGIA DE LA ECONOMIA|Vi|19a21
+4|290|1|Petrecolla Diego -Pirchio Alexis German|MICROECONOMIA I|Lu\Mi\Ju|09a11
+4|290|2|Pascuini Paulo Daniel|MICROECONOMIA I|Ma\Vi\Sa|09a11
+4|290|3|Fajfar Pablo Francisco|MICROECONOMIA I|Lu\Mi\Ju|11a13
+4|290|4|Mondolfo Francisco Augusto|MICROECONOMIA I|Lu\Mi\Ju|13a15
+4|290|5|Fabris Julio Eduardo|MICROECONOMIA I|Ma\Vi\Sa|15a17 Sa07a09
+4|290|6|Rossi Martin Antonio|MICROECONOMIA I|Ma\Vi\Sa|17a19 Sa09a11
+4|290|7|Apella Ignacio Raul|MICROECONOMIA I|Lu\Mi\Ju|19a21
+4|552|1|Lorenzo Guido|"DINERO| CREDITO Y BANCOS "|Lu\Mi\Ju|07a09
+4|552|2|Gomez Juan Francisco|"DINERO| CREDITO Y BANCOS "|Lu\Mi\Ju|09a11
+4|552|3|Katz Sebastian -Elias Diego Sebastian|"DINERO| CREDITO Y BANCOS "|Ma\Vi\Sa|09a11
+4|552|4|Dal Bianco Marcos Jose|"DINERO| CREDITO Y BANCOS "|Lu\Mi\Ju|19a21
+4|552|5|Simpson Lucio Mariano|"DINERO| CREDITO Y BANCOS "|Lu\Mi\Ju|19a21
+4|553|1|Krause Martin Enrique|HISTORIA D/PENSAMIENTO ECONOMICO|Lu\Ju|07a09
+4|553|2|Sember Florencia Romina|HISTORIA D/PENSAMIENTO ECONOMICO|Lu\Ju|09a11
+4|553|3|Haberfeld Leandro Ernesto|HISTORIA D/PENSAMIENTO ECONOMICO|Ma\Vi|09a11
+4|553|4|Romero Veronica Ines|HISTORIA D/PENSAMIENTO ECONOMICO|Lu\Ju|17a19
+4|553|5|Pascuzzo Carlos Alberto|HISTORIA D/PENSAMIENTO ECONOMICO|Ma\Vi|17a19
+4|553|6|Calderon Manuel Ignacio|HISTORIA D/PENSAMIENTO ECONOMICO|Ma\Vi|19a21
+4|553|7|Ramal Marcelo Armando|HISTORIA D/PENSAMIENTO ECONOMICO|Ma\Vi|17a19
+4|554|1|Keifman Saul Nestor -Herrero Diego|CRECIMIENTO ECONOMICO|Lu\Mi\Ju|09a11
+4|554|2|Trupkin Danilo Rogelio|CRECIMIENTO ECONOMICO|Lu\Ju|17a19
+4|554|3|Grandes Martin|CRECIMIENTO ECONOMICO|Lu\Ju|19a21
+4|554|4|Coremberg Ariel Alberto|CRECIMIENTO ECONOMICO|Ma\Vi|19a21
+4|554|5|Nicolini Llosa Jose Luis|CRECIMIENTO ECONOMICO|Ma\Vi|17a19
+4|555|1|Arza Valeria Luciana|ORGANIZACION INDUSTRIAL |Lu\Ju|09a11
+4|555|2|Maceira Daniel Alejandro|ORGANIZACION INDUSTRIAL |Ma\Vi|09a11
+4|555|3|Navajas Fernando Heberto -Kulesz Micaela Maria|ORGANIZACION INDUSTRIAL |Lu\Ju|09a11
+4|555|4|Romero Carlos Adrian -Navajas Fernando Heberto|ORGANIZACION INDUSTRIAL |Lu\Ju|19a21
+4|555|5|Ferraro Jimena Soledad|ORGANIZACION INDUSTRIAL |Ma\Vi|19a21
+4|556|1|Rotsztein Ricardo Ariel|FINANZAS PUBLICAS|Lu\Ju|09a11
+4|556|2|Costa Augusto Eduardo|FINANZAS PUBLICAS|Lu\Ju|09a11
+4|556|3|Cetrangolo Oscar Daniel -Curcio Javier Adrian|FINANZAS PUBLICAS|Ma\Vi|09a11
+4|556|4|Borenstein Andres|FINANZAS PUBLICAS|Lu\Ju|17a19
+4|556|5|Rossignolo Dario Alejandro|FINANZAS PUBLICAS|Ma\Vi|19a21
+4|557|1|Vazquez Blanco Juan Manuel|ESTRUCTURA SOCIAL ARGENTINA|Mi|09a11
+4|557|2|Fernandez Ana Laura|ESTRUCTURA SOCIAL ARGENTINA|Vi|11a13
+4|557|3|Kennedy Damian|ESTRUCTURA SOCIAL ARGENTINA|Ma|17a19
+4|557|4|Gonzalez Mariana Laura|ESTRUCTURA SOCIAL ARGENTINA|Vi|17a19
+4|557|99||ESTRUCTURA SOCIAL ARGENTINA||
+4|558|1|Molinari Andrea|ECONOMIA INTERNACIONAL|Lu\Ju|09a11
+4|558|2|Ramos Maria Priscila|ECONOMIA INTERNACIONAL|Ma\Vi|17a19
+4|558|3|Soltz Hernan Javier|ECONOMIA INTERNACIONAL|Lu\Ju|19a21
+4|559|1|Ronconi Lucas|DESARROLLO ECONOMICO|Lu\Ju|09a11
+4|559|2|Alzua Maria Laura|DESARROLLO ECONOMICO|Lu\Ju|11a13
+4|559|3|Sirlin Pablo Daniel|DESARROLLO ECONOMICO|Lu\Ju|13a15
+4|559|4|Lopez Andres Flavio -Svarzman Gustavo|DESARROLLO ECONOMICO|Lu\Ju|19a21
+4|560|1|Kulfas Matias Sebastian|ESTRUCTURA ECONOMICA ARGENTINA|Lu|09a11
+4|560|2|Bisang Roberto Oscar|ESTRUCTURA ECONOMICA ARGENTINA|Lu|17a19
+4|560|3|Coatz Diego Martin|ESTRUCTURA ECONOMICA ARGENTINA|Vi|17a19
+4|560|4|Español Paula Irene|ESTRUCTURA ECONOMICA ARGENTINA|Mi|19a21
+4|561|1|Cavallari Silvana Marta|CUENTAS NACIONALES|Lu\Mi\Ju|09a11
+4|561|2|Graña Juan Martin|CUENTAS NACIONALES|Lu\Mi\Ju|15a17
+4|561|3|Perez Regueira Guadalupe|CUENTAS NACIONALES|Lu\Mi\Ju|09a11
+4|561|4|Propatto Juan Carlos Aldo -Kidyba Susana Margarita|CUENTAS NACIONALES|Ma\Vi\Sa|09a11
+4|561|5|Gallo Mirta Paulina|CUENTAS NACIONALES|Lu\Mi\Ju|13a15
+4|561|6|Propatto Juan Carlos Aldo -Maceri Dario Alejandro|CUENTAS NACIONALES|Ma\Vi\Sa|19a21 Sa09a11
+4|561|7|Kidyba Susana Margarita|CUENTAS NACIONALES|Lu\Mi\Ju|21a23
+4|562|1|Ruggeri Cesar Hernan|SEMINARIO DE INTEGR. Y APLICACION|Ju|07a09
+4|562|2|Fernandez Ana Laura|SEMINARIO DE INTEGR. Y APLICACION|Vi|09a11
+4|562|3|Ivarola Leonardo Abel|SEMINARIO DE INTEGR. Y APLICACION|Mi|11a13
+4|562|4|Giarrizzo Maria Victoria|SEMINARIO DE INTEGR. Y APLICACION|Lu|17a19
+4|562|5|Chelala Santiago Martin|SEMINARIO DE INTEGR. Y APLICACION|Ma|17a19
+4|562|6|Giarrizzo Maria Victoria|SEMINARIO DE INTEGR. Y APLICACION|Lu|19a21
+4|247|1|Spisso Claudio Eduardo|TEORIA CONTABLE|Ma\Mi\Vi|19a21
+4|247|2|Rodriguez Gaston Nestor|TEORIA CONTABLE|Lu\Mi\Ju|17a19
+4|247|3|Fernandez Nuñez Maria Eugenia|TEORIA CONTABLE|Ma\Vi\Sa|09a11
+4|247|4|Vazquez Juan Pablo|TEORIA CONTABLE|Ma\Mi\Vi|19a21
+4|247|5|Sanchez Veronica Andrea|TEORIA CONTABLE|Ma\Mi\Vi|07a09
+4|247|6|Linari Patricia Cristina|TEORIA CONTABLE|Lu\Mi\Ju|09a11
+4|247|7|Santiago Maria Isabel|TEORIA CONTABLE|Ma\Mi\Vi|11a13
+4|247|8|Piotti Lopez Hernan Carlos|TEORIA CONTABLE|Ma\Mi\Vi|21a23
+4|247|72|Zaglul Carlos Salomon|TEORIA CONTABLE|Mi|17a19
+4|247|65|Santiago Maria Isabel|TEORIA CONTABLE||
+4|247|9|Mild Diego Rodrigo|TEORIA CONTABLE|Lu\Mi\Ju|07a09
+4|247|10|Ale Maria Ester|TEORIA CONTABLE|Lu\Mi\Ju|09a11
+4|247|11|Lang Fernando Marcelo|TEORIA CONTABLE|Ma\Mi\Vi|11a13
+4|247|12|Rapisarda Carlos Alberto|TEORIA CONTABLE|Lu\Mi\Ju|19a21
+4|247|13|Quintana Andrea Rosana|TEORIA CONTABLE|Lu\Mi\Ju|19a21
+4|247|14|Guffanti German Enrique|TEORIA CONTABLE|Ma\Mi\Vi|21a23
+4|247|15|Sebastian Monica Patricia|TEORIA CONTABLE|Lu\Mi\Ju|09a11
+4|247|99||TEORIA CONTABLE||
+4|247|16|Nadales Mariana Alicia|TEORIA CONTABLE|Ma\Mi\Vi|13a15
+4|247|17|D Onofrio Paula Alejandra -Santiago Maria Isabel|TEORIA CONTABLE|Lu\Mi\Ju|15a17
+4|247|18|Fraga Alejandro|TEORIA CONTABLE|Ma\Mi\Vi|17a19
+4|247|19|Pisani Damian Anibal|TEORIA CONTABLE|Ma\Mi\Vi|21a23
+4|247|20|Moreno Elvira Del Carmen|TEORIA CONTABLE|Ma\Mi\Vi|09a11
+4|247|21|Agra Graciela Susana|TEORIA CONTABLE|Ma\Mi\Vi|17a19
+4|247|22|Fornari Claudio|TEORIA CONTABLE|Ma\Mi\Vi|19a21
+4|247|98||TEORIA CONTABLE||
+4|247|23|Iaizzo Miguel Angel|TEORIA CONTABLE|Lu\Mi\Ju|19a21
+4|247|24|Iaizzo Miguel Angel -Aguilar Pinedo Carlos Alberto|TEORIA CONTABLE|Lu\Mi\Ju|17a19
+4|247|25|Imwinkelried Gloria Elena|TEORIA CONTABLE|Lu\Mi\Ju|11a13
+4|247|26|Garrido Elisabet Gilda|TEORIA CONTABLE|Lu\Mi\Ju|11a13
+4|247|27|Imwinkelried Gloria Elena|TEORIA CONTABLE|Ma\Mi\Vi|11a13
+4|247|28|Imwinkelried Gloria Elena -Canessa Eduardo Jorge|TEORIA CONTABLE|Ma\Mi\Vi|21a23
+4|247|71|Montanini Gustavo Amado|TEORIA CONTABLE|Lu|07a09
+4|247|29|Tesa Julian Amadeo|TEORIA CONTABLE|Ma\Mi\Vi|13a15
+4|247|30|Bodroy Angela Gregoria -Tesa Julian Amadeo|TEORIA CONTABLE|Ma\Mi\Vi|13a15
+4|247|31|Montanini Gustavo Amado -Otranto Jose Ruben|TEORIA CONTABLE|Lu\Mi\Ju|09a11
+4|247|32|Lecuona Gonzalo Martin|TEORIA CONTABLE|Lu\Mi\Ju|21a23
+4|247|33|Deu Daniel Ruben Hector|TEORIA CONTABLE|Lu\Mi\Ju|11a13
+4|247|34|Scavone Graciela Maria -Alquati Nora Beatriz|TEORIA CONTABLE|Lu\Mi\Ju|21a23
+4|247|35|Cerezo Ana Claudia|TEORIA CONTABLE|Ma\Vi\Sa|09a11
+4|247|85|Suarez Kimura Elsa Beatriz -Chiquiar Walter Rene|TEORIA CONTABLE|Vi|17a19
+4|247|36|Filippo Emilce Carmen|TEORIA CONTABLE|Lu\Mi\Ju|07a09
+4|247|37|Rinaldi Viviana Monica|TEORIA CONTABLE|Ma\Mi\Vi|17a19
+4|247|38|Escobar Diego Sebastian|TEORIA CONTABLE|Ma\Mi\Vi|19a21
+4|276|1|Sciaccaluga Cristian Hernan|CALCULO FINANCIERO|Lu\Mi\Ju|07a09
+4|276|2|Mas Ariel Guillermo|CALCULO FINANCIERO|Ma\Vi|07a09
+4|276|70|Tasat Jose Mario Marcelo|CALCULO FINANCIERO|Ju|09a11
+4|276|3|Rondinone Gonzalo|CALCULO FINANCIERO|Lu\Ju|09a11
+4|276|4|Tasat Jose Mario Marcelo|CALCULO FINANCIERO|Lu\Ju|11a13
+4|276|5|Fregeiro Clarisa Anabella|CALCULO FINANCIERO|Ma\Vi|17a19
+4|276|6|Thomasz Esteban Otto|CALCULO FINANCIERO|Ma\Vi|17a19
+4|276|7|Stefanidis Pablo|CALCULO FINANCIERO|Lu\Ju|19a21
+4|276|8|Artuso Carolina Gabriela|CALCULO FINANCIERO|Ma\Vi|19a21
+4|276|9|Barone Pascual Marcelo|CALCULO FINANCIERO|Lu\Mi\Ju|21a23
+4|276|65|Albornoz Carlos Maximiliano|CALCULO FINANCIERO||
+4|276|10|Milia Daniel Alberto|CALCULO FINANCIERO|Lu\Ju|13a15
+4|276|11|Conocchiari Martin|CALCULO FINANCIERO|Lu\Ju|19a21
+4|276|12|Chaufan Gabriel Alberto|CALCULO FINANCIERO|Lu\Ju|07a09
+4|276|13|Pizarro Luciano|CALCULO FINANCIERO|Lu\Ju|07a09
+4|276|99||CALCULO FINANCIERO||
+4|276|14|Meseri Jose Horacio|CALCULO FINANCIERO|Lu\Ju|07a09
+4|276|15|Travaglini Ignacio|CALCULO FINANCIERO|Ma\Vi|07a09
+4|276|16|Daffinoti Roman Emiliano|CALCULO FINANCIERO|Ma\Vi|09a11
+4|276|17|Meseri Jose Horacio|CALCULO FINANCIERO|Ma\Vi|15a17
+4|276|18|Liso Hector Ricardo|CALCULO FINANCIERO|Ma\Vi|15a17
+4|276|19|Castegnaro Aida Beatriz|CALCULO FINANCIERO|Ma\Vi|17a19
+4|276|20|Bellido Fernando Jose|CALCULO FINANCIERO|Ma\Vi|17a19
+4|276|21|Wainer Marcelo Eduardo|CALCULO FINANCIERO|Ma\Vi|19a21
+4|276|22|Cuniolo Carlos Jose|CALCULO FINANCIERO|Ma\Vi\Sa|19a21 Sa11a13
+4|276|23|Palazzo Ruben Oscar|CALCULO FINANCIERO|Ma\Vi|21a23
+4|276|24|Cuniolo Carlos Jose|CALCULO FINANCIERO|Lu\Ju|07a09
+4|276|25|Delconte Cesar Alejandro|CALCULO FINANCIERO|Lu\Mi\Ju|19a21
+4|276|26|Abazyan Maria Rosa|CALCULO FINANCIERO|Lu\Ju|07a09
+4|276|27|Bellido Fernando Jose|CALCULO FINANCIERO|Lu\Mi\Ju|19a21
+4|276|28|Rapeport Martin Gustavo|CALCULO FINANCIERO|Lu\Ju|07a09
+4|276|29|Orue Pablo Ezequiel|CALCULO FINANCIERO|Lu\Mi\Ju|09a11
+4|276|30|Bloise Alejandro Francisco|CALCULO FINANCIERO|Lu\Ju|11a13
+4|276|31|Ail Silvia Rosana|CALCULO FINANCIERO|Lu\Mi\Ju|11a13
+4|276|32|Ail Silvia Rosana|CALCULO FINANCIERO|Ma\Vi\Sa|11a13
+4|276|33|Mercado Justo Andres|CALCULO FINANCIERO|Lu\Ju|13a15
+4|276|34|Orellana Orlando|CALCULO FINANCIERO|Lu\Mi\Ju|17a19
+4|276|35|Mercado Justo Andres|CALCULO FINANCIERO|Ma\Vi|17a19
+4|276|36|Bellido Fernando Jose|CALCULO FINANCIERO|Ma\Vi|19a21
+4|276|37|Orellana Orlando|CALCULO FINANCIERO|Ma\Vi\Sa|21a23 Sa13a15
+4|276|98||CALCULO FINANCIERO||
+4|720|1|Grushka Carlos Oscar|DEMOGRAFIA Y SEGURIDAD SOCIAL|Lu\Ju|09a11
+4|731|99||ECONOMETRIA II||
+4|651|1|Spehrs Adriana Renee|LOGICA|Ma\Vi|09a11
+4|651|2|Legris Javier -Valiño Valeria Sol|LOGICA|Ma\Vi|13a15
+4|651|3|Fulugonio Maria Gabriela|LOGICA|Mi\Sa|21a23 Sa13a15
+4|712|1|Rodriguez Enriquez Corina|GENERO Y ECONOMIA|Ma\Vi|17a19
+4|713|1|Fajfar Pablo Francisco|TOPICOS DE MICROECONOMIA|Ma\Vi|11a13
+4|713|2|Carciofi Ignacio Nicolas|TOPICOS DE MICROECONOMIA|Ma\Vi|15a17
+4|745|1|Di Pelino Andres Ernesto|ECONOMIA DE LA ENERGIA|Ma\Vi|07a09
+4|767|1|Haberfeld Leandro Ernesto|ECONOMIA MARXISTA|Lu\Ju|17a19
+4|779|1|D Amato Laura Ines -Heymann Carlos Daniel|TOPICOS DE MACROECONOMIA|Lu\Ju|09a11
+4|783|1|Pique Maria Del Pilar|HIST.DEL PENSAMIENTO ECONOM. II|Ma\Vi|17a19
+4|760|1|D Angelo Julian Leonardo|PRACTICAS PARA LA INCLUSION SOCIAL|Ma\Vi|17a19
+4|760|2|Primatesta Maria Florencia|PRACTICAS PARA LA INCLUSION SOCIAL|Lu\Ju|09a11
+4|760|3|Zaidel Andrea Olga|PRACTICAS PARA LA INCLUSION SOCIAL|Lu\Ju|19a21
+4|760|4|Gonzalez Rocio Mara|PRACTICAS PARA LA INCLUSION SOCIAL|Ma\Vi|19a21
+4|760|5|Herrera Silvana Natalia|PRACTICAS PARA LA INCLUSION SOCIAL|Lu\Ju|09a11
