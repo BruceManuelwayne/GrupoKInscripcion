@@ -84,6 +84,7 @@ namespace SistemaInscripcionAMaterias
                     alumnoEncontrado.Registro = alumnos[posicion].Registro;
                     alumnoEncontrado.Condicion = alumnos[posicion].Condicion;
                 }
+               
                 else
                 {
                     posicion++;

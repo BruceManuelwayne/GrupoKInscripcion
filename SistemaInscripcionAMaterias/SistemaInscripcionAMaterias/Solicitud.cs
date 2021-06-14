@@ -106,9 +106,10 @@ namespace SistemaInscripcionAMaterias
                 {
                     seEncontro = true;
                 }
+               
                 else
                 {
-                    posicion++; 
+                    posicion++;
                 }
 
             }
