@@ -53,7 +53,7 @@ namespace SistemaInscripcionAMaterias
                 }
                 else
                 {
-                    bool alumnoNoExiste = false;
+                    
                     do
                     {
                         loginRegistro = Ingresos.IngresarNumeroRegistro($"Para ingresar, ingrese su numero de Registro", "No es un numero, intente de nuevo.", 100000, 900000);//TODO: hacer que tenga opcion de seguir o no
@@ -61,8 +61,8 @@ namespace SistemaInscripcionAMaterias
                         if (alumnoLogeado.Registro == 0)
                         {
                             Console.WriteLine($"El registro: {loginRegistro} no se encuentra en el sistema. Intente de nuevo:");
-                            alumnoNoExiste = true;
-                            break;
+                            
+                            continue;
                             // TODO: no corta bien revisar como mejorar. 
 
 
@@ -82,7 +82,7 @@ namespace SistemaInscripcionAMaterias
                             switch (opcionMenu)
                             {
                                 case 1:
-                                    if (!alumnoSolicitud.BuscarSolicitud(loginRegistro))
+                                    if (!alumnoSolicitud.BuscarSolicitud(alumnoLogeado.Registro))
                                     {
                                         // falta validacion armar clase carrera con sus datos dada cada carrera. 
                                         //Console.WriteLine("Actualmente estas cursando las ultimas 4 materias? (Ingrese S para si y N para no)");
@@ -147,7 +147,7 @@ namespace SistemaInscripcionAMaterias
 
                         }
 
-                    } while (!alumnoNoExiste);
+                    } while (!salir);
 
 
                 }
@@ -326,7 +326,7 @@ namespace SistemaInscripcionAMaterias
         {
             listaCarreraCorr.Clear();
 
-            listaSolicitudActual.Clear();
+            //listaSolicitudActual.Clear();
             //TODO cuando necesito limpiar las listas? 
         }
         //public void MostrarOferta(string archivo)

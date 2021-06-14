@@ -1,0 +1,4 @@
+Registro|CodCarrera|CodMateria|CodCursoOriginal|CodCursoAlernativo|Fecha
+884392|1|279|14|0|13/06/2021 21:05:41
+884392|1|278|26|0|13/06/2021 21:09:40
+864835|1|457|19|0|13/06/2021 21:12:23

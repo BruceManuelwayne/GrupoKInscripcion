@@ -85,10 +85,10 @@ namespace SistemaInscripcionAMaterias
         }
         public void Guardar() 
         {
-            using (var writer = new StreamWriter(NombreArchivo, append: false)) 
+            using (var writer = new StreamWriter(NombreArchivo, append: true)) 
             {
-                using(var reader = new StreamReader(NombreArchivo))
-                
+
+               
                 foreach (var solicitud in solicitudes) 
                 {
                     var linea = solicitud.ObtenerLineaDatos();
