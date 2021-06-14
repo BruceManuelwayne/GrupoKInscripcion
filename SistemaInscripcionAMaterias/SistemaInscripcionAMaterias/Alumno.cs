@@ -110,22 +110,7 @@ namespace SistemaInscripcionAMaterias
            
             return seEncontro;
         }
-        //public static Alumno AlumnoIngresado()
-        //{
-        //    var alumnoLogeado = new Alumno();
 
-        //    alumnoLogeado.Nombre = "Nicolas";
-        //    alumnoLogeado.Apellido = "Lopez";
-
-        //    alumnoLogeado.Registro = 877301;
-
-        //    alumnoLogeado.CodigoCarrera = 1;
-
-        //    //alumnoLogeado.InfoAlumno(alumnoLogeado.Nombre, alumnoLogeado.Apellido, alumnoLogeado.Legajo);
-
-        //    return alumnoLogeado;
-
-        //}
 
     }
 }

@@ -46,15 +46,7 @@ namespace SistemaInscripcionAMaterias
         public OfertaAcademica() 
         {
         }
-        //public void MostrarOferta() 
-        //{
-        //    Console.WriteLine("****************\nOferta Academica:\n****************");
-        //    foreach(Curso curso in cursos)
-        //    {
-        //        Console.WriteLine($" Codigo Mat: {curso.CodigoMateria} - Codigo Curso: {curso.CodigoCurso} - Nombre Materia: {curso.NombreMateria} - Horarios {curso.Hora} - Dias {curso.Dias}"); 
-        //    }
-        //}
-
+  
         public  bool ValidarCurso(int codigo) 
         {
             foreach (Curso curso in cursos) 

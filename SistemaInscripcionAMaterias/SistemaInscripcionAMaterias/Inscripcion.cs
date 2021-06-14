@@ -15,6 +15,7 @@ namespace SistemaInscripcionAMaterias
         Carrera carrera = new Carrera();
         Alumno alumnoLogeado = new Alumno();
         Solicitud alumnoSolicitud = new Solicitud();
+        PlanDeEstudio alumnoPlan = new PlanDeEstudio();
 
         int loginRegistro;
         int codigoCarrera;
@@ -26,15 +27,8 @@ namespace SistemaInscripcionAMaterias
         List<Solicitud> listaSolicitudActual = new List<Solicitud>();
         MateriasAprobadas alumnoMatApro = new MateriasAprobadas();
         List<Correlativas> listaCarreraCorr = new List<Correlativas>();
-        //List<Correlativas> CorrelativasFaltantes = new List<Correlativas>();
-        //List<Curso> OfertaSinCorrelativasFaltantes = new List<Curso>();
-        //List<Curso> OfertaSinCorreSinMatApro = new List<Curso>();
-
-
-
-
-
-
+        List<PlanDeEstudio> planSegunCarrera = new List<PlanDeEstudio>();
+  
         public void Login()
         {
             bool salir = false;
@@ -73,48 +67,87 @@ namespace SistemaInscripcionAMaterias
                                                  "4 - Salir\n", "Debe ingresar un numero, intente de nuevo:", 1, 4);
 
                             Console.WriteLine("---------------------------------------------------------------------------------------");
-                           
+                            
                             switch (opcionMenu)
                             {
                                 case 1:
                                     solicitudPendiente = alumnoSolicitud.ExisteSolicitud(alumnoLogeado.Registro);
                                     if (solicitudPendiente == false)
                                     {
-                                        // falta validacion armar clase carrera con sus datos dada cada carrera. 
-                                        //Console.WriteLine("Actualmente estas cursando las ultimas 4 materias? (Ingrese S para si y N para no)");
-                                        // if si int i<4 , generar validacion cantidad materias que faltan
-
-
-
-                                        for (int i = 0; i < 3; i++)
+                                        List<MateriasAprobadas> listaMatApro = alumnoMatApro.ListaAlumno(loginRegistro);
+                                        int cantidadMaterFaltantes = CalcularMateriasPendientes(alumnoLogeado.CodigoCarrera, listaMatApro);
+                                        if (cantidadMaterFaltantes <= 4)
                                         {
-
-                                            codigoCarrera = SeleccionCarrera();
-                                            InscripcionMaterias(codigoCarrera);
-                                            if (i < 2)
+                                            for (int i = 0; i < 4; i++)
                                             {
-                                                Console.WriteLine("Desea elegir otra materia para la inscripcion?(S/N)");
-                                                var key = Console.ReadKey(intercept: true);
-                                                if (key.Key == ConsoleKey.S)
+                                                Console.WriteLine("Actualmente estas cursando las ultimas 4 materias");
+                                                Console.WriteLine("Tu cuarta materia regular esta habilitada!");
+                                                Console.WriteLine("------------------------------------------------------------------------");
+                                                codigoCarrera = SeleccionCarrera();
+                                                InscripcionMaterias(codigoCarrera);
+                                                if (i < 2)
                                                 {
+                                                    Console.WriteLine("Desea elegir otra materia para la inscripcion?(S/N)");
+                                                    var key = Console.ReadKey(intercept: true);
+                                                    if (key.Key == ConsoleKey.S)
+                                                    {
+
+                                                    }
+                                                    if (key.Key == ConsoleKey.N)
+
+                                                    {
+                                                        i = 4;
+                                                    }
+                                                }
+                                                if (i < 3)
+                                                {
+                                                    Console.WriteLine("Desea elegir otra materia para la inscripcion?(S/N)");
+                                                    var key = Console.ReadKey(intercept: true);
+                                                    if (key.Key == ConsoleKey.S)
+                                                    {
+
+                                                    }
+                                                    if (key.Key == ConsoleKey.N)
+
+                                                    {
+                                                        i = 4;
+                                                    }
 
                                                 }
-                                                if (key.Key == ConsoleKey.N)
 
-                                                {
-                                                    i = 3;
-                                                }
                                             }
+                                            alumnoSolicitud.AgregarSolicitud(listaSolicitudActual);
+                                            GuardarSolicitud(listaSolicitudActual);
+                                            salir = true;
+                                        }
+                                        else 
+                                        {
+                                            for (int i = 0; i < 3; i++)
+                                            {
+
+                                                codigoCarrera = SeleccionCarrera();
+                                                InscripcionMaterias(codigoCarrera);
+                                                if (i < 2)
+                                                {
+                                                    Console.WriteLine("Desea elegir otra materia para la inscripcion?(S/N)");
+                                                    var key = Console.ReadKey(intercept: true);
+                                                    if (key.Key == ConsoleKey.S)
+                                                    {
+
+                                                    }
+                                                    if (key.Key == ConsoleKey.N)
+
+                                                    {
+                                                        i = 3;
+                                                    }
+                                                }
+
+                                            }
+                                            alumnoSolicitud.AgregarSolicitud(listaSolicitudActual);
+                                            GuardarSolicitud(listaSolicitudActual);
+                                            salir = true;
 
                                         }
-                                        alumnoSolicitud.AgregarSolicitud(listaSolicitudActual);
-                                        GuardarSolicitud(listaSolicitudActual);
-                                        salir = true;
-
-
-
-
-
 
                                     }
                                     else
@@ -138,12 +171,6 @@ namespace SistemaInscripcionAMaterias
                             continue;
                         }
 
-
-
-
-
-
-
                         Console.WriteLine("Saliendo del portal, hasta luego!");
                         salir = true;
                         break;
@@ -162,6 +189,7 @@ namespace SistemaInscripcionAMaterias
             alumnoMatApro.GenerarArchivo();
             correlativas.GenerarArchivo();
             alumnoSolicitud.generarArchivo();
+            alumnoPlan.GenerarArchivo();
 
 
         }
@@ -234,7 +262,7 @@ namespace SistemaInscripcionAMaterias
                 }
 
             }
-            //materiasSelecionadas.Add(codigoMateria);
+         
             Console.WriteLine($"Desea agregar un curso alternativo?(S/N)\n");
             var key = Console.ReadKey(intercept: true);
             if (key.Key == ConsoleKey.S)
@@ -273,12 +301,6 @@ namespace SistemaInscripcionAMaterias
                 listaSolicitudActual.Add(alumnoSolicitud);
 
             }
-
-
-
-            //Console.WriteLine("hasta aca:");
-            //Console.ReadKey(); 
-
 
         }
         public bool ConfirmarSeleccion()
@@ -325,14 +347,10 @@ namespace SistemaInscripcionAMaterias
         public void ClearLists()
         {
             listaCarreraCorr.Clear();
+            planSegunCarrera.Clear();
 
-            //listaSolicitudActual.Clear();
-            //TODO cuando necesito limpiar las listas? 
         }
-        //public void MostrarOferta(string archivo)
-        //{
-        //    OfertaAcademica ofertaSistemas = new OfertaAcademica(archivo);
-        //    ofertaSistemas.MostrarOferta();
+       
         public bool ExisteMateria(int codigo, List<Curso> oferta)
         {
 
@@ -354,7 +372,18 @@ namespace SistemaInscripcionAMaterias
             }
             return seEncontro;
         }
+        public int CalcularMateriasPendientes(int codCarreraAlumno, List<MateriasAprobadas>listaAlumnoMateriasAprobadas) 
+        {
+            int cantidadTotalMat;
+            int cantidadTotalAprobadas;
+            List<PlanDeEstudio> MateriasSegunCarrera = new List<PlanDeEstudio>();
+            MateriasSegunCarrera = alumnoPlan.MateriasDadoCarrera(codCarreraAlumno);
+            cantidadTotalMat = alumnoPlan.CountMateriasCarrera(MateriasSegunCarrera);
+            cantidadTotalAprobadas = listaAlumnoMateriasAprobadas.Count();
+            int diferencia = cantidadTotalMat - cantidadTotalAprobadas;
+            return diferencia;
 
+        }
         public bool ExisteCurso(int codigo, List<Curso> oferta)
         {
             int posicion = 0;
