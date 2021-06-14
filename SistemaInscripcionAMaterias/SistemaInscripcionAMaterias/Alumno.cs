@@ -92,7 +92,24 @@ namespace SistemaInscripcionAMaterias
             }   
             return alumnoEncontrado;
         }
-
+        public bool ExisteAlumno(int registro) 
+        {
+            bool seEncontro = false;
+            foreach (Alumno alumno in alumnos)
+            {
+                if (registro == alumno.Registro)
+                {
+                    seEncontro = true;
+                }
+               
+            }
+            if (!seEncontro) 
+            {
+                Console.WriteLine($"El numero de registro: {registro} no es alumno Regular");
+            }
+           
+            return seEncontro;
+        }
         //public static Alumno AlumnoIngresado()
         //{
         //    var alumnoLogeado = new Alumno();

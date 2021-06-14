@@ -56,7 +56,7 @@ namespace SistemaInscripcionAMaterias
                     while (!reader.EndOfStream)
                     {
                         var linea = reader.ReadLine();
-                        if (linea == "Registro|Codigo Carrera|Codigo Materia|Codigo Curso|Curso Alternativo|Fecha")
+                        if (linea == "Registro|CodCarrera|CodMateria|CodCursoOriginal|CodCursoAlernativo|Fecha")
                         {
                             continue;
                         }
@@ -96,25 +96,46 @@ namespace SistemaInscripcionAMaterias
                 }
             }
         }
-        public bool BuscarSolicitud(int registro) 
+        public bool ExisteSolicitud(int registro) 
         {
-            int posicion = 0;
+
             bool seEncontro = false;
-            while (posicion < solicitudes.Count && !seEncontro)
+            foreach (Solicitud sol in solicitudes)
             {
-                if (solicitudes[posicion].Registro == registro)
+                if (registro == sol.Registro)
                 {
                     seEncontro = true;
                 }
-               
-                else
-                {
-                    posicion++;
-                }
-
+                
             }
-            return seEncontro; 
+            if (seEncontro) 
+            {
+                Console.WriteLine("-------------------------------------------------------------------------------------");
+                Console.WriteLine($"El Registro:{registro} tiene una solicitud pendiente, no se puede generar otra.\n Contacte el departamento de Alumnos para generar un reclamo.");
+                Console.WriteLine("-------------------------------------------------------------------------------------");
+            }
+            
+            return seEncontro;
         }
+        //public bool BuscarSolicitud(int registro) 
+        //{
+        //    int posicion = 0;
+        //    bool seEncontro = false;
+        //    while (posicion < solicitudes.Count && !seEncontro)
+        //    {
+        //        if (solicitudes[posicion].Registro == registro)
+        //        {
+        //            seEncontro = true;
+        //        }
+               
+        //        else
+        //        {
+        //            posicion++;
+        //        }
+
+        //    }
+        //    return seEncontro; 
+        //}
         public void AgregarSolicitud(List<Solicitud> solicitudActual) 
         {
             foreach (Solicitud solicitud in solicitudActual) 
