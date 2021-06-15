@@ -51,7 +51,7 @@ namespace SistemaInscripcionAMaterias
                     do
                     {
 
-                        loginRegistro = Ingresos.IngresarNumeroRegistro($"Para ingresar, ingrese su numero de Registro", "No es un numero, intente de nuevo.", 100000, 900000);//TODO: hacer que tenga opcion de seguir o no
+                        loginRegistro = Ingresos.IngresarNumeroRegistro($"Para ingresar, ingrese su numero de Registro (solo numeros)", "No es un numero, intente de nuevo.", 100000, 900000);//TODO: hacer que tenga opcion de seguir o no
                         bool loginValido = alumnoLogeado.ExisteAlumno(loginRegistro);
                         if (loginValido == true)
                         {
