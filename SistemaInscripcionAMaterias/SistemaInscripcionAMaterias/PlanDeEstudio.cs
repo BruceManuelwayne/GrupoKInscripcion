@@ -14,15 +14,12 @@ namespace SistemaInscripcionAMaterias
         public int CodigoMateria { get; set; }
         
         public string NombreCarrera { get; set; }
-        public string Titular { get; set; }
 
         public string NombreMateria { get; set; }
 
 
 
-        public string Dias { get; set; }
-
-        public string Hora { get; set; }
+  
 
         List<PlanDeEstudio> PlanTodasCarrera = new List<PlanDeEstudio>();
         List<PlanDeEstudio> PlanSegunCarrera = new List<PlanDeEstudio>();

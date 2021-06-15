@@ -19,8 +19,7 @@ namespace SistemaInscripcionAMaterias
 
         List<Alumno> alumnos = new List<Alumno>(); 
 
-        List<MateriasAprobadas> MateriasAprobadas = new List<MateriasAprobadas>();
-
+       
         public Alumno(int registro, string nombre, string apellido, int codigoCarrera, string condicion) 
         {
             Registro = registro;

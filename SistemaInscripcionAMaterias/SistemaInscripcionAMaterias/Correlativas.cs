@@ -19,7 +19,7 @@ namespace SistemaInscripcionAMaterias
 
         List<Correlativas> correlativas = new List<Correlativas>();
         List<Correlativas> correlavtivasCarrera = new List<Correlativas>();
-        List<int> correlativasAlumnoFaltantes = new List<int>();
+   
 
         public Correlativas() { }
 

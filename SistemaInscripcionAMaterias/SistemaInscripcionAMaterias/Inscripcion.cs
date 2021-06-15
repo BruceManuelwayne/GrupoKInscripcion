@@ -63,7 +63,7 @@ namespace SistemaInscripcionAMaterias
                             int opcionMenu = Ingresos.IngresarInt("Selecione la instancia de inscricpion:" +
                                                  "\n1 - Inscirpcion Regular\n" +
                                                  "2 - Inscirpcion Cobertura de Vacantes\n" +
-                                                 "3 - Inscirpcion curso intensivo\n" +
+                                                 "3 - Inscirpcion a cursos a distancia/virtual/magistral\n" +
                                                  "4 - Salir\n", "Debe ingresar un numero, intente de nuevo:", 1, 4);
 
                             Console.WriteLine("---------------------------------------------------------------------------------------");

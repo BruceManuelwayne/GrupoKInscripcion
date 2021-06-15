@@ -9,13 +9,9 @@ namespace SistemaInscripcionAMaterias
 {
     class OfertaAcademica
     {
-        //public static Dictionary<int, Curso> cursos;
+       
         public List<Curso> cursos = new List<Curso>(); 
-        //public List<MateriasAprobadas> materiasAprobadasAlumno= new List<MateriasAprobadas>
-
-
         
-
         public OfertaAcademica(string archivo) 
         {
             
@@ -62,7 +58,7 @@ namespace SistemaInscripcionAMaterias
             return false;
         }
 
-        //TODO: que pasa si devuelve nada? 
+     
         public List<Curso> FiltrarMatAprobadas(List<MateriasAprobadas> materiasAproAlumno, List<Curso> ofertaCursoFiltradaCorre)
         {
             
